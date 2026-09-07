@@ -1,12 +1,12 @@
 dataset_key,dataset,chapters,category,source,identifier_or_url,acquisition,license_or_terms,redistribution_policy,large
-online_retail_ii,Online Retail II,3-4,real-world,UCI Machine Learning Repository,doi:10.24432/C5CG6D;uci_id:502,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,yes
+online_retail_ii,Online Retail II,3-4,real-world,UCI Machine Learning Repository,doi:10.24432/C5CG6D;uci_id:502,official_uci_archive,CC BY 4.0,download official UCI archive; attribution required,yes
 bike_sharing,Bike Sharing,6,real-world,UCI Machine Learning Repository,doi:10.24432/C5W894;uci_id:275,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
 bank_marketing,Bank Marketing,7,real-world,UCI Machine Learning Repository,doi:10.24432/C5K306;uci_id:222,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
-hydraulic_systems,Condition Monitoring of Hydraulic Systems,8,real-world,UCI Machine Learning Repository,doi:10.24432/C5CW21;uci_id:447,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
+hydraulic_systems,Condition Monitoring of Hydraulic Systems,8,real-world,UCI Machine Learning Repository,doi:10.24432/C5CW21;uci_id:447,official_uci_archive,CC BY 4.0,download official UCI archive; attribution required,yes
 wholesale_customers,Wholesale Customers,9,real-world,UCI Machine Learning Repository,doi:10.24432/C5030X;uci_id:292,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
 sms_spam,SMS Spam Collection,15,real-world,UCI Machine Learning Repository,doi:10.24432/C5CC84;uci_id:228,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
 movielens_latest_small,MovieLens latest-small,17,real-world,GroupLens Research,https://grouplens.org/datasets/movielens/latest/,official_zip,See current GroupLens README/license,do not commit raw data; download from GroupLens on user request,no
-household_power,Individual Household Electric Power Consumption,22,real-world,UCI Machine Learning Repository,doi:10.24432/C58K54;uci_id:235,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,yes
+household_power,Individual Household Electric Power Consumption,22,real-world,UCI Machine Learning Repository,doi:10.24432/C58K54;uci_id:235,official_uci_archive,CC BY 4.0,download official UCI archive; attribution required,yes
 adult,Adult / Census Income,26,real-world,UCI Machine Learning Repository,doi:10.24432/C5XW20;uci_id:2,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
 iris,Iris,5,benchmark,scikit-learn,sklearn.datasets.load_iris,sklearn_builtin,See scikit-learn dataset documentation,loaded from installed library; no raw copy needed,no
 breast_cancer,Breast Cancer Wisconsin (Diagnostic),7-8,benchmark,scikit-learn,sklearn.datasets.load_breast_cancer,sklearn_builtin,See scikit-learn dataset documentation,loaded from installed library; no raw copy needed,no
