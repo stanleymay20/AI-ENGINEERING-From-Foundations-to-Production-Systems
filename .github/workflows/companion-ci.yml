@@ -20,14 +20,14 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Validate companion source
-        shell: bash
-        run: |
-          if [ ! -d companion ]; then
-            echo "companion directory not present yet"
-            exit 0
-          fi
-          python -m compileall -q companion
+      - name: Compile companion source
+        run: python -m compileall -q companion
+
+      - name: Verify dataset registry coverage
+        run: python companion/verify_dataset_registry.py
+
+      - name: Verify dataset CLI can enumerate the controlled registry
+        run: python companion/download_datasets.py --list
 
       - name: Run deterministic reference assertions
         shell: bash
@@ -37,7 +37,7 @@ jobs:
             python -m pip install -r companion/requirements-reference.txt
             python companion/reference_assertions.py
           else
-            echo "Reference suite not synced yet; compile check only."
+            echo "Reference suite not synced yet; registry and compile gates still enforced."
           fi
 
       - name: Run offline reference smoke tests
