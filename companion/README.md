@@ -10,8 +10,9 @@ The repository now includes:
 - a controlled `dataset_registry.csv` covering every named dataset materially used by the current book, including the California Housing exercise;
 - `download_datasets.py`, which prepares datasets from official or library-managed sources without committing raw third-party data to Git;
 - `verify_dataset_registry.py`, which fails CI if required dataset coverage is lost;
-- deterministic reference assertions and smoke tests;
-- core/reference/data dependency files.
+- deterministic reference assertions and output smoke tests;
+- core/reference/data dependency files;
+- a Chapter 29 production-capstone acceptance checklist.
 
 See [DATASETS.md](DATASETS.md) for one-command dataset setup and redistribution rules.
 
@@ -26,11 +27,16 @@ Examples fall into three categories:
 ## Current layout
 
 ```text
+chapter03_04_online_retail_eda.py
 chapter06_bike_regression.py
 chapter07_bank_classification.py
+chapter08_california_regression.py
+chapter08_hydraulic_features.py
 chapter09_wholesale_clustering.py
 chapter15_sms_spam.py
+chapter17_movielens_recommender.py
 chapter22_power_timeseries_baseline.py
+chapter26_adult_fairness.py
 chapter27_rag_baseline.py
 chapter28_tool_agent.py
 chapter29_capstone/
