@@ -1,0 +1,20 @@
+dataset_key,dataset,chapters,category,source,identifier_or_url,acquisition,license_or_terms,redistribution_policy,large
+online_retail_ii,Online Retail II,3-4,real-world,UCI Machine Learning Repository,doi:10.24432/C5CG6D;uci_id:502,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,yes
+bike_sharing,Bike Sharing,6,real-world,UCI Machine Learning Repository,doi:10.24432/C5W894;uci_id:275,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
+bank_marketing,Bank Marketing,7,real-world,UCI Machine Learning Repository,doi:10.24432/C5K306;uci_id:222,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
+hydraulic_systems,Condition Monitoring of Hydraulic Systems,8,real-world,UCI Machine Learning Repository,doi:10.24432/C5CW21;uci_id:447,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
+wholesale_customers,Wholesale Customers,9,real-world,UCI Machine Learning Repository,doi:10.24432/C5030X;uci_id:292,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
+sms_spam,SMS Spam Collection,15,real-world,UCI Machine Learning Repository,doi:10.24432/C5CC84;uci_id:228,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
+movielens_latest_small,MovieLens latest-small,17,real-world,GroupLens Research,https://grouplens.org/datasets/movielens/latest/,official_zip,See current GroupLens README/license,do not commit raw data; download from GroupLens on user request,no
+household_power,Individual Household Electric Power Consumption,22,real-world,UCI Machine Learning Repository,doi:10.24432/C58K54;uci_id:235,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,yes
+adult,Adult / Census Income,26,real-world,UCI Machine Learning Repository,doi:10.24432/C5XW20;uci_id:2,ucimlrepo,CC BY 4.0,download from official UCI; attribution required,no
+iris,Iris,5,benchmark,scikit-learn,sklearn.datasets.load_iris,sklearn_builtin,See scikit-learn dataset documentation,loaded from installed library; no raw copy needed,no
+breast_cancer,Breast Cancer Wisconsin (Diagnostic),7-8,benchmark,scikit-learn,sklearn.datasets.load_breast_cancer,sklearn_builtin,See scikit-learn dataset documentation,loaded from installed library; no raw copy needed,no
+digits,Optical Recognition of Handwritten Digits,10,benchmark,scikit-learn,sklearn.datasets.load_digits,sklearn_builtin,See scikit-learn dataset documentation,loaded from installed library; no raw copy needed,no
+california_housing,California Housing,8,benchmark,scikit-learn,sklearn.datasets.fetch_california_housing,sklearn_fetch,See scikit-learn dataset documentation and original source terms,download/cache locally through scikit-learn; do not commit raw data,no
+20_newsgroups,20 Newsgroups,10,benchmark,scikit-learn,sklearn.datasets.fetch_20newsgroups,sklearn_fetch,Dataset content has upstream terms; see scikit-learn docs,cache locally; do not commit corpus,no
+mnist,MNIST,12;21,benchmark,Keras/TensorFlow,https://storage.googleapis.com/tensorflow/tf-keras-datasets/mnist.npz,official_file,See upstream MNIST/Keras dataset terms,download/cache locally; do not commit raw data,no
+cifar10,CIFAR-10,13,benchmark,University of Toronto,https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz,official_file,See upstream CIFAR terms,download/cache locally; do not commit raw data,no
+cifar100,CIFAR-100,12,benchmark,University of Toronto,https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz,official_file,See upstream CIFAR terms,download/cache locally; do not commit raw data,no
+imdb_reviews,IMDB Movie Reviews,15,benchmark,Stanford/Keras,https://storage.googleapis.com/tensorflow/tf-keras-datasets/imdb.npz,official_file,See upstream IMDB/Keras dataset terms,download/cache locally; do not commit raw data,no
+synthetic_sklearn,scikit-learn synthetic generators,5;7;9;11;23;24;29,synthetic,scikit-learn,make_classification;make_blobs;make_moons,generated,scikit-learn software license/generated data,generated on demand; nothing to download,no
