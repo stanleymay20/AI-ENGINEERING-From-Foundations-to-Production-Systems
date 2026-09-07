@@ -2,15 +2,28 @@
 
 This directory accompanies the **v2.4 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
 
+## What is implemented
+
+The repository now includes:
+
+- real-data chapter scripts for the principal applied labs;
+- a controlled `dataset_registry.csv` covering every named dataset materially used by the current book, including the California Housing exercise;
+- `download_datasets.py`, which prepares datasets from official or library-managed sources without committing raw third-party data to Git;
+- `verify_dataset_registry.py`, which fails CI if required dataset coverage is lost;
+- deterministic reference assertions and smoke tests;
+- core/reference/data dependency files.
+
+See [DATASETS.md](DATASETS.md) for one-command dataset setup and redistribution rules.
+
 ## Reproducibility standard
 
 Examples fall into three categories:
 
 1. **Deterministic reference checks** — expected outputs are regression-tested in a frozen reference environment.
 2. **Real-data labs** — require official datasets and may need network access to obtain them.
-3. **Version/service-sensitive examples** — such as TensorFlow, Transformers, MLflow, DVC, LIME, AIF360, Docker, hosted model APIs, and multi-GPU workflows. These must not be represented as locally verified unless that exact execution path was run.
+3. **Version/service-sensitive examples** — TensorFlow, Transformers, MLflow, DVC, LIME, AIF360, Docker, hosted model APIs, and multi-GPU workflows. These must not be represented as locally verified unless that exact execution path was run.
 
-## Planned companion layout
+## Current layout
 
 ```text
 chapter06_bike_regression.py
@@ -22,11 +35,18 @@ chapter27_rag_baseline.py
 chapter28_tool_agent.py
 chapter29_capstone/
 dataset_registry.csv
-download_uci_datasets.py
+download_datasets.py
+verify_dataset_registry.py
+DATASETS.md
 reference_assertions.py
 reference_output_smoke.py
 requirements-core.txt
+requirements-data.txt
 requirements-reference.txt
 ```
+
+## Dataset rule
+
+Raw third-party datasets are not part of the Git history. The repository instead records provenance, acquisition method, usage terms, and reproducible download/materialization instructions. `data/` remains gitignored.
 
 The publication rule is simple: **do not confuse illustrative output with verified output**. Any result printed in the book should either be reproducibly generated under the stated reference environment or clearly labelled representative/version-sensitive.
