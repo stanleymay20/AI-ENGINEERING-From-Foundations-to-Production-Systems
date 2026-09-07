@@ -70,6 +70,7 @@ def ch4_eda() -> None:
     df = pd.DataFrame({"Age": age, "Salary": salary, "Experience": experience})
     df.loc[0, "Salary"] = 200000
     df.loc[5, "Age"] = 95
+    df.loc[10, "Experience"] = 0
     close(float(df["Salary"].mean()), 62461.032838, 1e-3)
     close(float(df["Salary"].skew()), 2.779501, 1e-6)
     close(float(df.corr().loc["Age", "Experience"]), 0.853, 5e-4)
