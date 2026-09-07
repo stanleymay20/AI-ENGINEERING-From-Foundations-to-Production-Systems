@@ -4,7 +4,9 @@
 
 **Technical interior:** PASS  
 **Dataset/reproducibility:** PASS  
-**Commercial release:** HOLD pending ISBN/imprint/cover/proof decisions
+**Working imprint:** ScrollLibrary Press  
+**ISBN strategy:** own German publisher range; 1,000-number allocation recommended  
+**Commercial release:** HOLD pending ISBN purchase/assignment, final covers, retailer preflight, and physical proof
 
 ## Verified production outputs prepared from v2.4
 
@@ -12,6 +14,40 @@
 - KDP-specific pre-ISBN interior candidate with bookmarks, annotations/links, and metadata removed while preserving the rendered pages exactly
 - IngramSpark pre-ISBN PDF/X-1a:2001 grayscale interior candidate
 - EPUB 3 pre-ISBN candidate with native navigation, MathML, six semantic tables, all instructional images, and the permanent companion-repository link
+
+## Imprint decision
+
+**ScrollLibrary Press** is the recommended working publishing imprint for this title and future ScrollLibrary publishing activity.
+
+A preliminary broad web search did not surface an obvious exact-match publisher/trademark for the name. This is not legal/trademark clearance. Formal DPMA/EUIPO clearance remains an owner/legal task before relying on the name as a registered mark or legal company identity.
+
+See `publishing/SCROLLLIBRARY_PRESS_IMPRINT_ARCHITECTURE.md`.
+
+## ISBN decision
+
+Use publisher-owned ISBNs rather than a platform-issued free ISBN.
+
+The German ISBN Agency currently displays a 1,000-number allocation at **€400 + VAT** (price page marked Stand 01.08.2022; verify at live checkout). Given the intended ScrollLibrary Press publishing scope, the 1,000-number range is the recommended infrastructure choice.
+
+The first three format-specific allocations for this book will be:
+
+1. paperback
+2. hardcover
+3. EPUB
+
+Actual ISBNs remain **PENDING OWNER PURCHASE / MVB ASSIGNMENT**.
+
+See `publishing/ISBN_1000_REGISTRATION_PACK.md`.
+
+## Pricing direction
+
+Working German launch prices, subject to live KDP/Ingram economics and proof approval:
+
+- paperback: **€44.99**
+- hardcover: **€64.99**
+- EPUB/Kindle: **€12.99**
+
+See `publishing/PRICING_AND_FORMAT_STRATEGY.md`.
 
 ## KDP production note
 
@@ -39,29 +75,46 @@ A local structural preflight verified:
 
 Final commercial EPUB release remains pending official EPUBCheck validation after the identifier/publisher metadata are finalized.
 
-## Remaining launch decisions
+## Remaining launch blockers
 
-1. **ISBN ownership and assignment**
-   - choose own ISBN versus platform-provided ISBN
-   - if own ISBN, fix publisher/imprint and ISBN agency jurisdiction
+1. **Owner purchase of 1,000 ISBN allocation**
+   - register final publisher/legal details with the German ISBN Agency
+   - provide issued publisher range/prefix to production
 
-2. **Publisher/imprint wording**
-   - must match the ISBN registration and all retailer metadata
+2. **Formal imprint/name clearance**
+   - DPMA/EUIPO or appropriate professional clearance if the name will be registered/protected
 
-3. **Paperback paper choice**
-   - recommended launch default: black-and-white interior, white paper, matte cover
-   - page count: 394
+3. **Assign three ISBNs**
+   - paperback
+   - hardcover
+   - EPUB
 
-4. **Final cover wrap**
-   - generate from the retailer's exact template after ISBN, paper, binding, and page count are locked
-   - include back-cover copy and barcode-safe area
+4. **Propagate identifiers**
+   - metadata master
+   - copyright page
+   - EPUB package metadata
+   - retailer records
+   - VLB record
+   - release manifest
 
-5. **Retail metadata and pricing**
-   - final description, subjects/categories, keywords, author bio, territories, publication date, list price
+5. **Final paperback and hardcover wraps**
+   - generate from each retailer's exact template
+   - include final spine/back copy and barcode-safe area
 
-6. **Physical proof**
-   - order and inspect at least one proof before enabling broad distribution
+6. **Retail metadata/pricing**
+   - approve author bio
+   - confirm publication date and territories
+   - run live KDP/Ingram price economics
+   - publish compliant German fixed prices
+
+7. **Final validation**
+   - official EPUBCheck
+   - KDP Print Previewer
+   - IngramSpark preflight
+
+8. **Physical proof**
+   - inspect code size, gutter, binding, grayscale figures, tables, equations, headers/folios, cover alignment, spine, and barcode
 
 ## Release rule
 
-Do not call the edition commercially released until the final ISBN/imprint metadata, cover wrap, EPUBCheck result, retailer preview/preflight, and physical proof have all passed.
+Do not call the edition commercially released until final ISBN/imprint metadata, cover wraps, EPUBCheck, retailer preview/preflight, and physical proof have all passed.
