@@ -7,19 +7,26 @@ A project-based AI engineering textbook covering the path from foundations and d
 
 ## Repository status
 
-This repository is the canonical **reader companion, reproducibility, QA, and release-metadata repository** for the publication-controlled v2.4 edition.
+This repository is the canonical **reader companion, reproducibility, QA, and release-metadata repository** for the book.
 
-Current controlled interior status:
+Publication control is currently split deliberately:
 
-- 6×9 technical-publisher layout
-- 30 chapters
-- 26 instructional figures
-- real-world dataset labs
-- code/output verification pass
-- semantic table reconstruction pass
-- figure integration and cross-reference pass
-- accessibility QA pass
-- print-interior PDF/DOCX maintained as controlled publication assets rather than casually duplicated into Git history
+- **v2.4** remains the last historically documented frozen interior/release baseline in the existing `V2_4_*` records;
+- **v3.8** is the active forensic repair candidate as of 7 September 2026;
+- v3.8 is **not yet a frozen commercial release** and must not be described as FINAL until the remaining all-page visual, EPUB, retailer-preflight, and physical-proof gates pass.
+
+Current v3.8 repair-candidate status:
+
+- exact 6×9 print geometry has been regenerated and preflighted;
+- 30 chapters and five appendices remain synchronized with the static table of contents;
+- code-wrap, syntax, output-label, paragraph-fragmentation, equation-rendering, stale-API, and technical-accuracy repairs have been applied across the manuscript;
+- Chapter 21 now uses a genuine compact convolutional GAN example instead of an MLP mislabeled as DCGAN;
+- generative-model evaluation guidance now treats FID as widely used but limited, and uses KID plus task-specific/human evaluation rather than a nonstandard scalar score;
+- real-world dataset labs and the controlled dataset registry remain the source of truth for data provenance;
+- companion CI tests Python 3.13.5 as the canonical environment and Python 3.12 as a compatibility gate;
+- print-interior PDF/DOCX assets remain controlled publication artifacts rather than being casually duplicated into Git history.
+
+See `qa/V3_8_FORENSIC_REPAIR_STATUS.md` for the active repair ledger once present. Historical v2.4 records remain preserved for traceability.
 
 ## Quick start
 
@@ -77,4 +84,4 @@ The exact reference-test dependency pins are in `companion/requirements-referenc
 
 ## Publication note
 
-The technical interior is controlled, but commercial release remains gated on final ISBN/imprint assignment, retailer-specific cover wraps, final EPUBCheck, retailer preview/preflight, and a physical proof. See `qa/COMMERCIAL_RELEASE_GATE.md` and `qa/V2_4_EXTERNAL_DIAGNOSTIC_RECHECK.md`.
+The v3.8 technical interior is an active **repair candidate**, not a frozen release. Commercial release remains gated on final all-page visual QA, EPUBCheck, ISBN/imprint assignment, retailer-specific cover wraps, KDP/Ingram preflight/preview, and a physical proof. Historical v2.4 release records remain useful evidence but must not be mistaken for v3.8 approval.
