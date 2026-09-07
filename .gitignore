@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local datasets / model artifacts
+data/
+models/
+artifacts/
+*.joblib
+*.pkl
+*.onnx
+
+# Publishing build intermediates
+build/
+render/
+.tmp/
+*.tmp
+~$*.docx
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
