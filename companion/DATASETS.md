@@ -10,13 +10,15 @@ Install the lightweight data dependencies:
 python -m pip install -r companion/requirements-data.txt
 ```
 
-Prepare the standard real-world labs and scikit-learn benchmarks:
+Prepare the standard non-large real-world labs and scikit-learn benchmarks:
 
 ```bash
 python companion/download_datasets.py --standard
 ```
 
-Prepare every downloadable dataset used by the book, including the two large UCI datasets and MovieLens:
+Large/raw datasets such as Hydraulic Systems, Online Retail II and Household Power are skipped unless `--include-large` is supplied.
+
+Prepare every downloadable dataset used by the book, including the large UCI datasets and MovieLens:
 
 ```bash
 python companion/download_datasets.py --all --include-large --include-movielens
@@ -42,7 +44,7 @@ The command writes `data/DATASET_MANIFEST.json` containing the files actually pr
 
 The registry covers four acquisition types:
 
-1. **Real-world UCI labs** — downloaded using official UCI identifiers via `ucimlrepo`.
+1. **Real-world UCI labs** — standard tabular datasets are materialized through `ucimlrepo`; large/raw time-series datasets are downloaded as official UCI archives so their native files and sampling structure are preserved.
 2. **scikit-learn benchmarks** — materialized from `load_*` functions or fetched using `fetch_20newsgroups` / `fetch_california_housing`.
 3. **Framework benchmark archives** — MNIST, CIFAR-10, CIFAR-100 and IMDB are fetched from the upstream URLs used by the ecosystem rather than duplicated in Git.
 4. **Synthetic examples** — `make_classification`, `make_blobs`, and `make_moons` are generated deterministically from the code; there is no dataset file to download.
