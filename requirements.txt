@@ -1,0 +1,7 @@
+# Exact deterministic reference environment for AI Engineering v2.4.
+# Python itself is pinned separately in .python-version.
+-r companion/requirements-reference.txt
+
+# Dataset/lab helpers used by the principal companion exercises.
+ucimlrepo>=0.0.7,<1
+openpyxl>=3.1,<4
