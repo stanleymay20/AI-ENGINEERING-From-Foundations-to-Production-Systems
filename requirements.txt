@@ -1,5 +1,5 @@
-# Exact deterministic reference environment for AI Engineering v2.4.
-# Python itself is pinned separately in .python-version.
+# Exact deterministic reference environment for the current AI Engineering study edition.
+# Python itself is pinned separately in .python-version (canonical: 3.13.5).
 -r companion/requirements-reference.txt
 
 # Dataset/lab helpers used by the principal companion exercises.
