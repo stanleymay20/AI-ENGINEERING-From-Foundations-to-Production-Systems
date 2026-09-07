@@ -1,0 +1,50 @@
+name: Companion Code QA
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  reference-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate companion source
+        shell: bash
+        run: |
+          if [ ! -d companion ]; then
+            echo "companion directory not present yet"
+            exit 0
+          fi
+          python -m compileall -q companion
+
+      - name: Run deterministic reference assertions
+        shell: bash
+        run: |
+          if [ -f companion/requirements-reference.txt ] && [ -f companion/reference_assertions.py ]; then
+            python -m pip install --upgrade pip
+            python -m pip install -r companion/requirements-reference.txt
+            python companion/reference_assertions.py
+          else
+            echo "Reference suite not synced yet; compile check only."
+          fi
+
+      - name: Run offline reference smoke tests
+        shell: bash
+        run: |
+          if [ -f companion/reference_output_smoke.py ]; then
+            python companion/reference_output_smoke.py
+          else
+            echo "Smoke-test script not synced yet."
+          fi
