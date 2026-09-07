@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-engineering-companion"
+version = "2.4.0"
+description = "Reproducibility and companion environment for AI Engineering: From Foundations to Production Systems"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "numpy==2.3.5",
+  "pandas==2.2.3",
+  "scikit-learn==1.8.0",
+  "matplotlib==3.10.8",
+  "joblib==1.5.3",
+  "ucimlrepo>=0.0.7,<1",
+  "openpyxl>=3.1,<4",
+]
+
+[tool.setuptools]
+py-modules = []
