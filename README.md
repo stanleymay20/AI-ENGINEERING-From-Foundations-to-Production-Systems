@@ -21,6 +21,23 @@ Current controlled interior status:
 - accessibility QA pass
 - print-interior PDF/DOCX maintained as release artifacts
 
+## Dataset quick start
+
+The repository does not redistribute raw third-party datasets. Instead, it provides a controlled registry plus reproducible acquisition tooling.
+
+```bash
+python -m pip install -r companion/requirements-data.txt
+python companion/download_datasets.py --standard
+```
+
+To prepare every downloadable dataset used by the book, including the large UCI archives and MovieLens:
+
+```bash
+python companion/download_datasets.py --all --include-large --include-movielens
+```
+
+See [`companion/DATASETS.md`](companion/DATASETS.md) and [`companion/dataset_registry.csv`](companion/dataset_registry.csv) for provenance, licensing/terms, chapter coverage, and redistribution policy.
+
 ## Repository layout
 
 ```text
@@ -33,7 +50,7 @@ release/        release metadata and checksums for frozen editions
 
 ## Reproducibility
 
-The companion examples separate deterministic reference checks from network/data-dependent labs. Where a dataset must be downloaded, its provenance and licensing should be recorded in the dataset registry and the result should not be represented as locally verified unless the data-dependent run was actually executed.
+The companion examples separate deterministic reference checks from network/data-dependent labs. Where a dataset must be downloaded, its provenance and licensing are recorded in the dataset registry, and results are not represented as locally verified unless the relevant execution path was actually run.
 
 ## Publication note
 
