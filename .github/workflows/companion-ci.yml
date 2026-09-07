@@ -29,22 +29,48 @@ jobs:
       - name: Verify dataset CLI can enumerate the controlled registry
         run: python companion/download_datasets.py --list
 
+      - name: Install data/reference dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r companion/requirements-data.txt
+
+      - name: Smoke-test local dataset materialization
+        run: |
+          python companion/download_datasets.py \
+            --output /tmp/ai-engineering-data \
+            --dataset iris \
+            --dataset breast_cancer \
+            --dataset digits
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          manifest = json.loads(Path('/tmp/ai-engineering-data/DATASET_MANIFEST.json').read_text())
+          keys = {row['dataset_key'] for row in manifest['files']}
+          assert keys == {'iris', 'breast_cancer', 'digits'}, keys
+          assert all(len(row['sha256']) == 64 for row in manifest['files'])
+          print('PASS local dataset materialization smoke test')
+          PY
+
+      - name: Run offline RAG and bounded-agent references
+        run: |
+          python companion/chapter27_rag_baseline.py
+          python companion/chapter28_tool_agent.py
+
       - name: Run deterministic reference assertions
         shell: bash
         run: |
           if [ -f companion/requirements-reference.txt ] && [ -f companion/reference_assertions.py ]; then
-            python -m pip install --upgrade pip
             python -m pip install -r companion/requirements-reference.txt
             python companion/reference_assertions.py
           else
-            echo "Reference suite not synced yet; registry and compile gates still enforced."
+            echo "Reference assertion suite not synced yet; dataset and core smoke gates still enforced."
           fi
 
-      - name: Run offline reference smoke tests
+      - name: Run offline reference output smoke tests
         shell: bash
         run: |
           if [ -f companion/reference_output_smoke.py ]; then
             python companion/reference_output_smoke.py
           else
-            echo "Smoke-test script not synced yet."
+            echo "Reference output smoke script not synced yet."
           fi
