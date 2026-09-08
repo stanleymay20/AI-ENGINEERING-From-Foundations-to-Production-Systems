@@ -1,0 +1,43 @@
+name: Book errata or reproducibility report
+description: Report a suspected defect in the book or controlled companion material
+title: "[Book report] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve the book. A report is verified before it is classified as confirmed errata.
+  - type: input
+    id: version
+    attributes:
+      label: Book version / edition
+      placeholder: "v3.13, Code-Verified Illustrated Study Edition · 2026"
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Print page or EPUB chapter/section, plus figure/code/equation identifier if applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: What appears to be wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Reproduction evidence
+      description: Include commands, output, dataset/version information, or authoritative references where relevant.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python and library versions, hardware/service details where relevant.
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
