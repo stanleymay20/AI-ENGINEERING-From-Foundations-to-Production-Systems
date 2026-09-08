@@ -3,34 +3,26 @@
 **Author:** Stanley Osei-Wusu  
 **Edition:** Code-Verified Illustrated Study Edition · 2026
 
-A project-based AI engineering textbook covering the path from foundations and data work through machine learning, deep learning, NLP, computer vision, reinforcement learning, production deployment, MLOps, retrieval-augmented generation, tool-using agents, evaluation, security, observability, and production governance.
+This is the canonical reader companion, reproducibility, errata, QA, and release-metadata repository for the book.
 
-## Repository status
+## Reader links
 
-This repository is the canonical **reader companion, reproducibility, QA, and release-metadata repository** for the book.
+- **Errata and corrections:** [ERRATA.md](ERRATA.md)
+- **Book version / update policy:** [BOOK_VERSION.md](BOOK_VERSION.md)
+- **Dataset provenance and acquisition:** [companion/DATASETS.md](companion/DATASETS.md)
+- **Dataset registry:** [companion/dataset_registry.csv](companion/dataset_registry.csv)
+- **Principal runnable labs and reference checks:** [`companion/`](companion/)
+- **Report a suspected book or companion-code defect:** use this repository's GitHub Issues and include the book version, location, evidence, and environment where relevant.
 
-Publication control is currently split deliberately:
+## Publication control
 
-- **v2.4** remains the last historically documented frozen interior/release baseline in the existing `V2_4_*` records;
-- **v3.8** is the active forensic repair candidate as of 7 September 2026;
-- v3.8 is **not yet a frozen commercial release** and must not be described as FINAL until the remaining all-page visual, EPUB, retailer-preflight, and physical-proof gates pass.
+The technically validated v3.12 interior passed the controlled DOCX/PDF/code/visual gates and official EPUBCheck 5.3.0 under EPUB 3.3 rules with 0 fatals, 0 errors, 0 warnings, and 0 infos. The v3.13 publication-infrastructure candidate adds reader-facing repository/errata/version/support metadata without reopening the 30 technical chapters unless a substantiated defect is found.
 
-Current v3.8 repair-candidate status:
-
-- exact 6×9 print geometry has been regenerated and preflighted;
-- 30 chapters and five appendices remain synchronized with the static table of contents;
-- code-wrap, syntax, output-label, paragraph-fragmentation, equation-rendering, stale-API, and technical-accuracy repairs have been applied across the manuscript;
-- Chapter 21 now uses a genuine compact convolutional GAN example instead of an MLP mislabeled as DCGAN;
-- generative-model evaluation guidance now treats FID as widely used but limited, and uses KID plus task-specific/human evaluation rather than a nonstandard scalar score;
-- real-world dataset labs and the controlled dataset registry remain the source of truth for data provenance;
-- companion CI tests Python 3.13.5 as the canonical environment and Python 3.12 as a compatibility gate;
-- print-interior PDF/DOCX assets remain controlled publication artifacts rather than being casually duplicated into Git history.
-
-See `qa/V3_8_FORENSIC_REPAIR_STATUS.md` for the active repair ledger once present. Historical v2.4 records remain preserved for traceability.
+Print-interior DOCX/PDF/EPUB masters remain controlled publication artifacts outside ordinary Git history. Repository records describe and support those masters; they do not replace them.
 
 ## Quick start
 
-The exact deterministic reference environment uses Python 3.13.5. If your version manager understands `.python-version`, it can select the intended interpreter automatically.
+The deterministic reference environment uses Python 3.13.5.
 
 ```bash
 python -m venv .venv
@@ -39,7 +31,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Run the deterministic checks with:
+Run deterministic checks with:
 
 ```bash
 python companion/reference_assertions.py
@@ -48,19 +40,19 @@ python companion/reference_output_smoke.py
 
 ## Dataset quick start
 
-The repository does not redistribute raw third-party datasets. Instead, it provides a controlled registry plus reproducible acquisition tooling.
+Raw third-party datasets are not casually redistributed. Use the controlled acquisition tooling:
 
 ```bash
 python companion/download_datasets.py --standard
 ```
 
-To prepare every downloadable dataset used by the book, including the large UCI archives and MovieLens:
+For all downloadable datasets, including large UCI archives and MovieLens where permitted:
 
 ```bash
 python companion/download_datasets.py --all --include-large --include-movielens
 ```
 
-See [`companion/DATASETS.md`](companion/DATASETS.md) and [`companion/dataset_registry.csv`](companion/dataset_registry.csv) for provenance, licensing/terms, chapter coverage, and redistribution policy.
+Always review the dataset registry and current upstream terms before redistribution.
 
 ## Repository layout
 
@@ -69,19 +61,20 @@ companion/      principal runnable labs, dataset helpers, and reference tests
 publishing/     imprint, ISBN, retailer metadata, pricing, and production planning
 qa/             publication, code, dataset, table, figure, and layout QA evidence
 release/        release metadata and checksums for frozen editions
-requirements.txt
-pyproject.toml
-.python-version
+ERRATA.md       controlled post-publication correction register
+BOOK_VERSION.md edition, currency, support, and freeze policy
 ```
 
-The book promises standalone scripts for the **major assessed labs**. It does not claim that every instructional code cell in all 30 chapters is duplicated as a separate `.py` file. Notebook-style or sequential examples remain in the book; principal applied labs are maintained under `companion/`.
+## Reproducibility policy
 
-## Reproducibility
+The companion separates deterministic reference checks from network-, data-, hardware-, and service-dependent labs. Results are not represented as locally verified unless the relevant execution path was actually run. Version-sensitive examples may legitimately vary across supported environments.
 
-The companion examples separate deterministic reference checks from network/data-dependent labs. Where a dataset must be downloaded, its provenance and licensing are recorded in the dataset registry, and results are not represented as locally verified unless the relevant execution path was actually run.
+The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters.
 
-The exact reference-test dependency pins are in `companion/requirements-reference.txt`. Broader supported ranges for ordinary reader work are retained in the companion-specific requirement files.
+## Reader support boundary
 
-## Publication note
+Please report reproducible defects in the book, companion code, controlled dataset instructions, or compatibility regressions through GitHub Issues. General debugging of unrelated local environments, cloud billing/accounts, third-party APIs, or custom projects is outside the book errata process.
 
-The v3.8 technical interior is an active **repair candidate**, not a frozen release. Commercial release remains gated on final all-page visual QA, EPUBCheck, ISBN/imprint assignment, retailer-specific cover wraps, KDP/Ingram preflight/preview, and a physical proof. Historical v2.4 release records remain useful evidence but must not be mistaken for v3.8 approval.
+## Release boundary
+
+Commercial publication still requires final imprint/ISBN decisions, format-specific covers, retailer upload/preflight, and physical-proof acceptance. Those are distribution gates rather than evidence that the validated technical content is defective.
