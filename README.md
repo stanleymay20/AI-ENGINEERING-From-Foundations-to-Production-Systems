@@ -17,27 +17,26 @@ A project-based AI engineering textbook covering foundations, machine learning, 
 
 ## Controlled publication status
 
-The current controlled manuscript/interior is **v3.20**.
+The current frozen and authoritative manuscript/interior is **v3.21**.
 
-v3.20 is the **Explanatory Engineering Diagrams** pass. It supersedes v3.19 by adding **12 new high-value engineering diagrams** while preserving the validated production case studies, source-code sequence, Table 1-1 layout repair, and core technical content.
+v3.21 supersedes v3.20 after a controlled forensic repair and repagination pass. It integrates the corrected Appendix C answer guide, targeted mathematical/ML/production repairs, a leakage-safe Chapter 22 LSTM example, a complete Chapter 25 DDP example, responsible-AI source/definition repairs, and a professional subject index.
 
-The controlled interior is **420 pages, exact 6 × 9 in**.
+The controlled interior is **440 physical pages, exact 6 × 9 in**.
 
 Validated publication evidence includes:
 
-- **420/420 pages** manually visually reviewed;
-- 30 chapters and five appendices reconciled with the v3.20 TOC;
-- Table 1-1 retained on its dedicated new-page start at physical page 15 / folio 5;
-- **38 instructional figures** total (26 retained + 12 new), with **38/38 alternative text**;
+- complete visual QA across the final 440-page lineage;
+- 30 chapters and five appendices reconciled to the final v3.21 TOC;
+- professional subject index integrated at folio 413;
+- **38 instructional figures**, with **38/38 alternative text**;
 - DOCX accessibility: **0 high / 0 medium / 0 low**;
-- 121 Source Code paragraphs, byte-for-byte identical in sequence to v3.19;
-- 101 Python-parsable blocks passing AST parsing, with 20 shell/config/prompt/diagram blocks correctly excluded;
-- exact 6 × 9 archival PDF with **53 curated bookmarks** and **47 links**;
-- archival PDF retains title/author metadata;
-- retailer print PDF with **0 bookmarks, 0 links/annotations, and no metadata stream**;
-- exact-base-to-archival render identity on **420/420 pages**;
-- archival-to-retailer render identity on **420/420 pages**;
-- EPUB 3 with **38 figures**, 38/38 alt texts, **736 MathML elements**, **181 preformatted code blocks**, semantic navigation, and accessibility metadata;
+- **121/121 Source Code** blocks retained;
+- exactly two intended code replacements versus v3.20: Chapter 22 LSTM and Chapter 25 DDP;
+- **101 Python-classified blocks AST PASS**, with 20 intentional non-Python/non-AST exclusions;
+- archival PDF: **440 pages at exact 432 × 648 pt**, 53 curated bookmarks, 47 links, tagged structure and metadata retained;
+- retailer print PDF: **440 pages at exact 432 × 648 pt**, 0 bookmarks, 0 links/annotations, no XMP and no `/Info` dictionary;
+- archival-to-retailer render identity: **440/440 pages PASS**;
+- EPUB 3: 57 XHTML files, 38 images, 38/38 image alt texts, **739 MathML elements**, **181 preformatted code blocks**, semantic navigation and accessibility metadata;
 - official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
 The controlled DOCX/PDF/EPUB masters remain release artifacts outside ordinary Git history. This repository is the canonical reader companion, reproducibility, errata, QA, and release-metadata surface.
@@ -84,14 +83,14 @@ Please report reproducible defects in the book, companion code, controlled datas
 
 ## A+++ programme boundary
 
-The production-case-study and explanatory-diagram targets are now closed. The chapter-to-code map is maintained as a reader-facing repository resource. Remaining competitive work is:
+The internal forensic-repair, explanatory-diagram, professional-index, chapter-to-code-map, accessibility, PDF and EPUB validation targets are closed for frozen v3.21. Remaining publication-programme work is external/commercial rather than a reason to reopen the frozen book without evidence of a defect:
 
-- deeper professional subject index;
-- independent ML/deep-learning review;
-- independent MLOps/production review;
-- independent LLM/RAG/agent review;
-- final professional copyedit/proofread.
+- genuine independent ML/deep-learning technical review;
+- genuine independent MLOps/production technical review;
+- genuine independent LLM/RAG/agent technical review;
+- professional copyedit/proofread where still required;
+- physical proof and retailer preflight.
 
 ## Commercial-release boundary
 
-Commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance.
+Commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance. No reviewer identity, endorsement, ISBN, proof approval, or retailer approval is implied by the frozen v3.21 technical state.
