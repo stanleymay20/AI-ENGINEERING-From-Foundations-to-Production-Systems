@@ -1,29 +1,29 @@
 # Companion Code
 
-This directory accompanies the current **v3.17 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
+This directory accompanies the current **v3.19 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
 
-The deterministic reference environment and principal companion-code architecture were established during the earlier validated technical-core programme. The **Source Code** sequence in v3.17 is byte-for-byte unchanged from v3.16, so the existing companion-code baseline remains authoritative for those examples while v3.17 adds prose/reference depth around model adaptation and production inference engineering.
+The deterministic reference environment and principal companion-code architecture were established during the validated technical-core programme. The **Source Code** paragraph sequence in v3.19 is byte-for-byte identical to v3.18, so the existing companion-code baseline remains authoritative while v3.19 adds six evidence-based production case files to Chapters 23-28.
 
 ## What is implemented
 
 The repository includes:
 
-- real-data chapter scripts for the principal applied labs;
-- a controlled `dataset_registry.csv` covering every named dataset materially used by the current book, including the California Housing exercise;
-- `download_datasets.py`, which prepares datasets from official or library-managed sources without committing raw third-party data to Git;
-- `verify_dataset_registry.py`, which fails CI if required dataset coverage is lost;
+- real-data chapter scripts for principal applied labs;
+- a controlled `dataset_registry.csv` for materially used named datasets;
+- `download_datasets.py` for controlled acquisition without casually committing raw third-party data;
+- `verify_dataset_registry.py` to fail CI if required dataset coverage is lost;
 - deterministic reference assertions and output smoke tests;
 - core/reference/data dependency files;
 - a Chapter 29 production-capstone acceptance checklist.
 
-See [DATASETS.md](DATASETS.md) for one-command dataset setup and redistribution rules.
+See [DATASETS.md](DATASETS.md) for dataset setup and redistribution rules.
 
 ## Reproducibility standard
 
 Examples fall into three categories:
 
 1. **Deterministic reference checks** — expected outputs are regression-tested in a frozen reference environment.
-2. **Real-data labs** — require official datasets and may need network access to obtain them.
+2. **Real-data labs** — require official datasets and may need network access.
 3. **Version/service-sensitive examples** — TensorFlow, Transformers, MLflow, DVC, LIME, AIF360, Docker, hosted model APIs, and multi-GPU workflows. These must not be represented as locally verified unless that exact execution path was run.
 
 ## Current layout
@@ -55,7 +55,7 @@ requirements-reference.txt
 
 ## Dataset rule
 
-Raw third-party datasets are not part of the Git history. The repository instead records provenance, acquisition method, usage terms, and reproducible download/materialization instructions. `data/` remains gitignored.
+Raw third-party datasets are not part of Git history. The repository records provenance, acquisition method, usage terms, and reproducible materialization instructions. `data/` remains gitignored.
 
 ## Reader support and errata
 
@@ -63,8 +63,12 @@ Raw third-party datasets are not part of the Git history. The repository instead
 - Confirmed errata: [`../ERRATA.md`](../ERRATA.md)
 - Suspected defects: open a repository Issue and identify the book version, location, evidence, and environment where relevant.
 
+## Case-study boundary
+
+v3.19 adds case studies to the manuscript, not new companion executables. Reader reports about a case-study claim should include the exact claim and the primary/authoritative source evidence supporting the correction.
+
 ## Code-map boundary
 
-The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters. A deeper stable chapter/code map remains part of the broader A+++ programme.
+The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters. A deeper stable chapter/code map remains part of the A+++ programme.
 
 The publication rule is simple: **do not confuse illustrative output with verified output**. Any result printed in the book should either be reproducibly generated under the stated reference environment or clearly labelled representative/version-sensitive.
