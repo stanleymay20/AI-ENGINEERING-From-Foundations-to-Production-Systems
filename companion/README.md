@@ -1,8 +1,8 @@
 # Companion Code
 
-This directory accompanies the current **v3.16 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
+This directory accompanies the current **v3.17 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
 
-The deterministic reference environment and principal companion-code architecture were established during the earlier validated technical-core programme and remain the reproducibility baseline for the unchanged technical chapters in v3.16.
+The deterministic reference environment and principal companion-code architecture were established during the earlier validated technical-core programme. The **Source Code** sequence in v3.17 is byte-for-byte unchanged from v3.16, so the existing companion-code baseline remains authoritative for those examples while v3.17 adds prose/reference depth around model adaptation and production inference engineering.
 
 ## What is implemented
 
@@ -62,5 +62,9 @@ Raw third-party datasets are not part of the Git history. The repository instead
 - Book/version policy: [`../BOOK_VERSION.md`](../BOOK_VERSION.md)
 - Confirmed errata: [`../ERRATA.md`](../ERRATA.md)
 - Suspected defects: open a repository Issue and identify the book version, location, evidence, and environment where relevant.
+
+## Code-map boundary
+
+The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters. A deeper stable chapter/code map remains part of the broader A+++ programme.
 
 The publication rule is simple: **do not confuse illustrative output with verified output**. Any result printed in the book should either be reproducibly generated under the stated reference environment or clearly labelled representative/version-sensitive.
