@@ -1,9 +1,8 @@
 # AI Engineering — Pricing and Format Strategy
 
-**Prepared:** 7 September 2026; pagination refreshed for v3.17 on 9 September 2026  
+**Current controlled interior:** v3.20, **420 pages**, 6 × 9 in  
 **Working imprint candidate:** ScrollLibrary Press  
-**Current controlled interior:** v3.17, **406 pages**, 6×9 in  
-**Print-cost scenario below:** black-ink interior; final ink/paper configuration remains an owner/platform decision
+**Status:** planning only; recheck live retailer costs and rules before publication.
 
 ## Recommended launch formats
 
@@ -15,9 +14,9 @@ Working launch plan:
 
 Do not prioritize audiobook for the first release; the book contains code, equations, tables, and diagrams that depend heavily on visual presentation.
 
-## Recommended German list prices — working scenario
+## Working German list-price anchors
 
-These are planning anchors, not locked retail prices. Final prices must be recalculated after the actual KDP/Ingram print configuration, wholesale economics, ISBN setup, and physical proof are confirmed.
+These are planning anchors, not locked retail prices. Final prices must be recalculated after actual KDP/Ingram print configuration, wholesale economics, ISBN setup, and physical proof are confirmed.
 
 | Format | Working DE retail price |
 |---|---:|
@@ -27,33 +26,25 @@ These are planning anchors, not locked retail prices. Final prices must be recal
 
 ### Positioning rationale
 
-The book is a 406-page professional technical title with 30 chapters, five appendices, companion code, chapter-level primary sources/further reading, controlled reproducibility infrastructure, errata/version governance, and a production-oriented AI engineering scope. It should be priced as a professional technical book rather than a commodity quick-start title.
+The book is a 420-page professional technical title with 30 chapters, five appendices, 38 instructional figures, six evidence-based production case files, companion code, chapter-level primary sources/further reading, controlled reproducibility infrastructure, errata/version governance, and a production-oriented AI-engineering scope. It should be priced as a professional technical book rather than a commodity quick-start title.
 
-Any competitor-price examples or royalty-band assumptions used in planning must be rechecked at the time of submission because retailer pricing and royalty rules can change.
+## Previously captured KDP black-ink planning assumptions
 
-## Approximate KDP print economics — Germany, black-ink planning scenario
+The earlier controlled planning capture used:
 
-The earlier planning capture used the following Amazon.de black-ink regular-trim paperback cost model:
+- paperback fixed cost: €0.75
+- paperback per page: €0.012
+- hardcover fixed cost: €4.50
+- hardcover per page: €0.012
 
-- fixed cost: €0.75
-- per page: €0.012
+At **420 pages**, those captured assumptions produce:
 
-At **406 pages**, that scenario gives an estimated paperback print cost of:
+- paperback estimated print cost: **€0.75 + (420 × €0.012) = €5.79**
+- hardcover estimated print cost: **€4.50 + (420 × €0.012) = €9.54**
 
-**€0.75 + (406 × €0.012) = €5.622** — approximately **€5.62** before any later platform changes.
+These figures are planning calculations only, not current-platform guarantees. Recheck the live KDP calculator/rules before pricing or publication, especially if the final interior is color or the paper/binding changes.
 
-The earlier hardcover planning capture used:
-
-- fixed cost: €4.50
-- per page: €0.012
-
-At **406 pages**, that scenario gives an estimated hardcover print cost of:
-
-**€4.50 + (406 × €0.012) = €9.372** — approximately **€9.37** before any later platform changes.
-
-These figures are planning calculations only. Recheck the live KDP calculator/rules before pricing or publication, especially if the final interior is color, the paper/binding changes, or marketplace rates are updated.
-
-Reference pages used in the earlier planning pass:
+Earlier planning references:
 
 - Paperback cost: https://kdp.amazon.com/de_DE/help/topic/G201834340
 - Paperback royalty: https://kdp.amazon.com/de_DE/help/topic/G201834330
@@ -62,15 +53,13 @@ Reference pages used in the earlier planning pass:
 
 ## German book-price-fixing rule
 
-The German price strategy must be checked against the applicable fixed-book-price requirements before launch. The ebook is a separate edition and may have a different price from the print edition, but do not create inconsistent pricing for the same edition across German channels.
+Check the applicable German fixed-book-price requirements immediately before launch. The ebook is a separate edition and may have a different price from print, but do not create inconsistent pricing for the same edition across German channels.
 
-Reference used in the planning pack: https://german-isbn.de/fuer-einsteiger/bevor-sie-ihr-buch-ver%C3%B6ffentlichen/preis-und-preisbindung
+Planning reference: https://german-isbn.de/fuer-einsteiger/bevor-sie-ihr-buch-ver%C3%B6ffentlichen/preis-und-preisbindung
 
-## International pricing direction
+## International working anchors
 
-Do not mechanically currency-convert every territory. Use comparable technical-book price bands and local marketplace economics.
-
-Working anchors subject to live checks:
+Subject to live marketplace checks:
 
 - US paperback: **$49.99**
 - US hardcover: **$69.99**
@@ -98,4 +87,4 @@ No price is locked until all of the following are complete:
 
 ## Controlled rule
 
-If the final print configuration changes the page count, update the pricing model and cover/spine calculations from the new frozen interior. Do not use the old 390-page v3.16 assumptions for the current v3.17 release.
+If the final print configuration changes the page count, update the pricing model and cover/spine calculations from the new frozen interior. Do not reuse the earlier v3.17/v3.19 page-count assumptions for the current v3.20 release.
