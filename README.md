@@ -16,35 +16,27 @@ A project-based AI engineering textbook covering foundations, machine learning, 
 
 ## Controlled publication status
 
-The current controlled manuscript/interior is **v3.19**.
+The current controlled manuscript/interior is **v3.20**.
 
-v3.19 is the **Production Case Studies** pass. It supersedes v3.18 by adding six evidence-based engineering case files across Chapters 23-28 while preserving the validated source-code sequence and the Table 1-1 layout repair.
+v3.20 is the **Explanatory Engineering Diagrams** pass. It supersedes v3.19 by adding **12 new high-value engineering diagrams** while preserving the validated production case studies, source-code sequence, Table 1-1 layout repair, and core technical content.
 
-The six case files cover:
-
-1. Knight Capital — deployment/change-control failure.
-2. Zillow Offers — forecasting uncertainty interacting with operational capacity and feedback.
-3. ChatGPT March 2023 — caching, concurrency, pooled connections, and tenant isolation.
-4. NIST face-recognition evaluations — aggregate accuracy versus subgroup risk.
-5. Air Canada chatbot — grounding/accountability; not represented as proof of an LLM/RAG-specific incident.
-6. Uber ATG Tempe crash — human oversight and automation complacency as a safety analogue; not represented as an LLM-agent incident.
-
-The controlled interior is **413 pages, exact 6 × 9 in**.
+The controlled interior is **420 pages, exact 6 × 9 in**.
 
 Validated publication evidence includes:
 
-- 413/413 pages visually reviewed;
-- 30 chapters and five appendices reconciled with the v3.19 TOC;
-- Table 1-1 retained on its clean new-page start at physical page 15 / folio 5;
-- 26 instructional figures with alternative text;
+- **420/420 pages** manually visually reviewed;
+- 30 chapters and five appendices reconciled with the v3.20 TOC;
+- Table 1-1 retained on its dedicated new-page start at physical page 15 / folio 5;
+- **38 instructional figures** total (26 retained + 12 new), with **38/38 alternative text**;
 - DOCX accessibility: **0 high / 0 medium / 0 low**;
-- 121 Source Code paragraphs, byte-for-byte identical in sequence to v3.18;
+- 121 Source Code paragraphs, byte-for-byte identical in sequence to v3.19;
 - 101 Python-parsable blocks passing AST parsing, with 20 shell/config/prompt/diagram blocks correctly excluded;
 - exact 6 × 9 archival PDF with **53 curated bookmarks** and **47 links**;
-- retailer print PDF with **0 bookmarks, 0 links/annotations, no metadata stream, and no Info metadata**;
-- source-crop-to-archival render identity on **413/413 pages**;
-- archival-to-retailer render identity on **413/413 pages**;
-- EPUB 3 with 26 figures, alternative text, **736 MathML elements**, **181 preformatted code blocks**, semantic navigation, and accessibility metadata;
+- archival PDF retains title/author metadata;
+- retailer print PDF with **0 bookmarks, 0 links/annotations, and no metadata stream**;
+- exact-base-to-archival render identity on **420/420 pages**;
+- archival-to-retailer render identity on **420/420 pages**;
+- EPUB 3 with **38 figures**, 38/38 alt texts, **736 MathML elements**, **181 preformatted code blocks**, semantic navigation, and accessibility metadata;
 - official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
 The controlled DOCX/PDF/EPUB masters remain release artifacts outside ordinary Git history. This repository is the canonical reader companion, reproducibility, errata, QA, and release-metadata surface.
@@ -87,14 +79,13 @@ The companion separates deterministic reference checks from network-, data-, har
 
 ## Reader support boundary
 
-Please report reproducible defects in the book, companion code, controlled dataset instructions, accessibility, metadata, cross-references, case-study sourcing, or compatibility regressions through GitHub Issues. General debugging of unrelated environments, cloud billing/accounts, third-party APIs, hardware, or custom projects is outside the book errata process.
+Please report reproducible defects in the book, companion code, controlled dataset instructions, accessibility, metadata, cross-references, diagrams, case-study sourcing, or compatibility regressions through GitHub Issues. General debugging of unrelated environments, cloud billing/accounts, third-party APIs, hardware, or custom projects is outside the book errata process.
 
 ## A+++ programme boundary
 
-The evidence-based production case-study target is now closed in v3.19. The remaining competitive A+++ programme is:
+The production-case-study and explanatory-diagram targets are now closed. Remaining competitive work is:
 
-- additional explanatory engineering diagrams;
-- deeper professional subject index / stable code map;
+- deeper professional subject index / stable chapter-to-code map;
 - independent ML/deep-learning review;
 - independent MLOps/production review;
 - independent LLM/RAG/agent review;
