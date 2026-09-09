@@ -1,111 +1,175 @@
-# AI Engineering — Controlled Commercial Metadata Master
+# AI Engineering — Commercial Metadata Master v3.16
 
-**Working imprint:** ScrollLibrary Press  
-**Author:** Stanley Osei-Wusu  
-**Edition:** Code-Verified Illustrated Study Edition, 2026  
-**Interior:** v2.4, 394 pages, 6×9 in
+Controlled book: **AI Engineering: From Foundations to Production Systems**  
+Author: **Stanley Osei-Wusu**  
+Edition: **Code-Verified Illustrated Study Edition · 2026**  
+Controlled publication build: **v3.16**  
+Interior: **390 pages, 6 × 9 in, English**
 
-This file is the canonical commercial-metadata draft. Final retailer submissions must be checked against it after ISBN assignment.
+## 1. Canonical bibliographic identity
 
-## Title
+- **Recommended bibliographic title:** AI Engineering
+- **Subtitle:** From Foundations to Production Systems
+- **Cover descriptor / strapline:** A Project-Based Guide to Building Real-World AI Systems That Learn, Reason, and Scale
+- **Canonical display title:** AI Engineering: From Foundations to Production Systems
+- **Author / primary contributor:** Stanley Osei-Wusu
+- **Contributor role:** Author
+- **Edition number:** 1
+- **Edition statement:** First Edition, 2026
+- **Edition name:** Code-Verified Illustrated Study Edition
+- **Language:** English (en-US)
+- **Audience:** General/Adult; professional, academic, university, graduate, and self-directed technical learners
+- **Series:** None
+- **Page count:** 390
+- **Trim size:** 6 × 9 in (152.4 × 228.6 mm)
+- **Illustrations:** 26 instructional figures
+- **Companion repository:** https://github.com/stanleymay20/AI-ENGINEERING-From-Foundations-to-Production-Systems
+- **Errata:** ERRATA.md in the companion repository
+- **Reader support / accessibility reports:** GitHub Issues in the companion repository
 
-**AI Engineering: From Foundations to Production Systems**
+## 2. Publisher/imprint status
 
-## Subtitle
+- **Working production candidate:** ScrollLibrary Press.
+- The imprint architecture remains a working pre-launch identity, not a legal/trademark clearance.
+- Do not embed the imprint as the final publisher-of-record in released files until the owner/name-clearance decision is complete.
 
-**A Project-Based Guide to Building Real-World AI Systems That Learn, Reason, and Scale**
+## 3. Metadata fields that remain deliberately OPEN
 
-## Author
+These must not be fabricated or embedded until assigned:
 
-Stanley Osei-Wusu
+- **Final publisher / imprint:** OPEN pending final owner/name-clearance decision.
+- **Paperback ISBN-13:** OPEN.
+- **Hardcover ISBN-13:** OPEN if hardcover will be released.
+- **EPUB ISBN-13:** OPEN if using an owned ebook ISBN / Ingram distribution.
+- **Exact publication date:** OPEN.
+- **List prices by market/currency:** OPEN.
+- **Print configuration:** OPEN — black-and-white/grayscale vs color, paper stock, binding.
+- **Hardcover configuration:** OPEN if applicable.
+- **Territorial rights statement:** confirm before distribution.
+- **DRM choice:** OPEN for ebook channels.
+- **Library of Congress / other national cataloging identifiers:** optional and not yet assigned.
+- **Named technical reviewers / endorsers / review quotes:** only add after real reviews are completed.
+- **Retailer AI-content disclosure questions:** answer accurately during platform setup; do not infer or fabricate.
 
-## Publisher / imprint
+## 4. Short description
 
-ScrollLibrary Press
+**AI Engineering** is a project-based guide to building real-world AI systems from foundations to production. It combines Python, machine learning, deep learning, NLP, computer vision, transformers, MLOps, RAG, AI agents, security, observability, and responsible AI with reproducibility and deployment-focused practice.
 
-## Language
+## 5. Full retailer description
 
-English
+AI models are only one part of a production AI system. Real engineering begins when data must be acquired and validated, models must be evaluated under realistic conditions, services must be deployed and monitored, and failures must be handled safely.
 
-## Edition statement
+**AI Engineering: From Foundations to Production Systems** provides an end-to-end, project-based path from Python and data fundamentals through machine learning, deep learning, NLP, computer vision, reinforcement learning, transformers, time-series systems, model deployment, MLOps, retrieval-augmented generation, tool-using agents, LLMOps, observability, security, and responsible AI.
 
-Code-Verified Illustrated Study Edition, 2026
+Across 30 chapters and five appendices, readers learn how to:
 
-## Product formats
+- move from exploratory notebooks to reproducible engineering workflows;
+- work with real-world and benchmark datasets with explicit provenance;
+- evaluate classification, regression, clustering, deep-learning, NLP, vision, and time-series systems;
+- deploy and scale models using production-oriented patterns;
+- build retrieval, vector-search, RAG, and tool-using agent systems;
+- monitor drift, quality, reliability, cost, and operational behavior;
+- apply security, privacy, fairness, explainability, and governance controls;
+- distinguish reference-tested examples from version-sensitive and conceptual integrations;
+- build portfolio-ready projects that preserve code, data sources, metrics, limitations, and reproducibility evidence.
 
-- 6×9 paperback, black-and-white interior, white paper, matte cover
-- 6×9 hardcover, black-and-white interior, white paper, matte cover
-- reflowable EPUB 3 / Kindle edition
+The book is designed for software developers, data scientists, machine-learning practitioners, students, technical leads, and product builders who want to understand not only how AI models work, but how dependable AI systems are engineered and operated.
 
-## ISBN fields
+The Code-Verified Illustrated Study Edition includes a companion GitHub repository, controlled dataset-acquisition guidance, errata and version tracking, accessibility support, MathML-based digital mathematics, and a reproducibility-focused study architecture.
 
-- Paperback ISBN: **PENDING MVB ALLOCATION**
-- Hardcover ISBN: **PENDING MVB ALLOCATION**
-- EPUB ISBN: **PENDING MVB ALLOCATION**
+## 6. KDP keyword set — 7 slots
 
-Do not use one format's ISBN for another format.
+1. **AI engineering**
+2. **machine learning systems**
+3. **MLOps deployment**
+4. **generative AI**
+5. **LLM engineering**
+6. **RAG vector search**
+7. **AI agent systems**
 
-## Long retailer description
+## 7. Expanded discovery keywords
 
-AI engineering begins where a model demo ends.
+artificial intelligence; AI engineering; production AI; machine learning; deep learning; MLOps; LLMOps; generative AI; large language models; LLM engineering; retrieval augmented generation; RAG; vector search; embeddings; AI agents; tool-using agents; natural language processing; computer vision; reinforcement learning; time series; model deployment; model monitoring; observability; responsible AI; AI security; Python; data science; reproducible machine learning
 
-*AI Engineering: From Foundations to Production Systems* is a project-based guide to designing, building, evaluating, deploying, and operating real AI systems. Across 30 chapters, Stanley Osei-Wusu connects the foundations of Python, data preparation, machine learning, neural networks, NLP, computer vision, recommendation systems, reinforcement learning, and time-series analysis with the production disciplines that determine whether AI actually works outside a notebook.
+## 8. BISAC recommendations
 
-The book goes beyond model training into deployment, MLOps, scaling, responsible AI, embeddings, vector search, retrieval-augmented generation (RAG), tool-using agents, guardrails, LLM evaluation, observability, security, and production governance.
+Recommended primary-to-secondary order:
 
-Readers work with benchmark and real-world datasets, code examples, exercises, knowledge checks, portfolio projects, and a final integrated AI application. The companion GitHub repository provides dataset acquisition, reproducibility tooling, real-data labs, deterministic reference tests, and CI-backed verification for the controlled examples.
+1. **COM004000 — COMPUTERS / Artificial Intelligence / General**
+2. **COM094000 — COMPUTERS / Data Science / Machine Learning**
+3. **COM051230 — COMPUTERS / Software Development & Engineering / General**
 
-Designed for serious independent study, university-level learning, and working practitioners, this book teaches not only how AI models learn, but how dependable AI systems are engineered.
+Optional alternate when generative-AI discovery is strategically important:
 
-## Short retailer description
+- **COM100000 — COMPUTERS / Artificial Intelligence / Generative AI**
 
-A project-based, production-focused guide to AI engineering—from Python, machine learning and deep learning through RAG, agents, MLOps, evaluation, security and governance—with real datasets, verified reference examples, figures, exercises and a reproducible companion repository.
+Confirm current retailer availability at submission time.
 
-## Back-cover positioning
+## 9. Thema recommendations
 
-**Learn the models. Engineer the system. Prove it works.**
+1. **UYQ — Artificial intelligence (AI)** — primary
+2. **UMZ — Software Engineering**
+3. **UTC — Cloud computing**
 
-Building a model is only the beginning. Modern AI engineers must manage data quality, experiments, evaluation, deployment, monitoring, security, retrieval, agents, failure modes, governance, and the systems that connect them.
+Confirm the currently accepted Thema edition/code mapping at title setup.
 
-This book takes readers from first principles to production.
+## 10. Audience and merchandising
 
-## Recommended BISAC subjects
+- **Audience code:** General/Adult
+- **Professional/Scholarly positioning:** Yes
+- **Academic use:** Suitable for university, graduate, professional, bootcamp, and structured independent study; not represented as an accredited course.
+- **Reading age / grade:** Not a juvenile or YA title; no age/grade range should be entered unless a retailer requires a value.
+- **Regional subject:** none — the technical content is global rather than location-specific.
 
-1. COM004000 — COMPUTERS / Artificial Intelligence / General
-2. COM094000 — COMPUTERS / Data Science / Machine Learning
-3. COM100000 — COMPUTERS / Artificial Intelligence / Generative AI
+## 11. Recommended retailer category targets
 
-Confirm the currently available retailer mapping at submission time.
+Choose the closest current marketplace categories to:
 
-## Keyword phrases
+- Artificial Intelligence
+- Machine Learning / Data Science
+- Software Development / Software Engineering
 
-1. production machine learning systems
-2. AI engineering with Python
-3. LLM engineering RAG vector search
-4. AI agents tool calling guardrails
-5. MLOps deployment observability
-6. deep learning NLP computer vision
-7. responsible AI evaluation security
+Do not select unrelated categories for rank manipulation.
 
-## Companion repository
+## 12. Contributor biography
 
-https://github.com/stanleymay20/AI-ENGINEERING-From-Foundations-to-Production-Systems
+Stanley Osei-Wusu is an AI and data practitioner, product builder, and author focused on turning machine-learning and generative-AI concepts into reproducible, secure, observable, production-oriented systems. His work spans data science, AI application engineering, decision intelligence, agentic systems, and the practical governance required to move from experiments to dependable software. His engineering approach emphasizes building, testing, measuring, documenting, and understanding the limits of every system.
 
-## Author bio — controlled draft, owner approval required
+## 13. Selling points / retailer bullets
 
-Stanley Osei-Wusu is an AI and data science practitioner, author, and product builder focused on turning machine-learning and generative-AI concepts into usable systems. His work spans data products, decision intelligence, agentic applications, and AI-assisted publishing. He writes from a practical engineering perspective, connecting model development with evaluation, deployment, observability, security, and responsible use.
+- End-to-end coverage: foundations, ML, deep learning, NLP, vision, transformers, time series, deployment, MLOps, RAG, agents, security, observability, and governance.
+- Project-based learning across 30 chapters and five appendices.
+- Real-world dataset provenance and controlled acquisition guidance.
+- Explicit reference-tested, version-sensitive, and conceptual code statuses.
+- Companion GitHub repository with errata, version policy, reproducibility checks, and reader reporting.
+- Production-focused treatment of monitoring, drift, reliability, security, and responsible AI.
+- Accessibility-oriented EPUB with semantic navigation, MathML, and alternative text.
 
-## Rights
+## 14. Format record
 
-- Copyright holder: Stanley Osei-Wusu
-- Copyright year: 2026
-- Publisher/imprint: ScrollLibrary Press
-- Territorial rights: **OWNER TO CONFIRM BEFORE SUBMISSION**
+### Paperback
+- Trim: 6 × 9 in
+- Interior pages: 390
+- Interior file: `AI_Engineering_v3_16_6x9_PRINT_UPLOAD_MASTER.pdf`
+- ISBN: OPEN
+- Ink/paper: OPEN
+- Cover spine width: calculate only after ink/paper/platform choice is locked
 
-## Publication date
+### Hardcover
+- Launch: OPEN decision
+- Interior pages: 390
+- ISBN: OPEN
+- Binding / paper / cover template: OPEN
 
-**TO BE SET AFTER ISBN ASSIGNMENT AND PROOF SCHEDULING**
+### EPUB
+- File: `AI_Engineering_v3_16_EPUB3_PUBLICATION_MASTER.epub`
+- EPUBCheck 5.3.0 / EPUB 3.3: 0 fatals / 0 errors / 0 warnings / 0 infos
+- Owned ebook ISBN: OPEN if required for the chosen distribution path
 
-## Release rule
+## 15. Metadata consistency rule
 
-Once actual ISBNs are assigned, update this file first, then propagate the identifiers to the copyright page, retailer metadata, EPUB package metadata, cover/barcode workflow, VLB record, and release manifest.
+The title, subtitle, author name, edition statement, publisher/imprint, and ISBN must be entered consistently across ISBN registration, cover files, copyright page, KDP, IngramSpark, retailer feeds, author website, and library metadata. If an owned ISBN is printed inside the book, it must match the identifier submitted to the platform for that exact format.
+
+## 16. Release rule
+
+Once final imprint/ISBN/date decisions are made, update this canonical metadata file first, then propagate those exact values to the copyright page, EPUB package metadata, cover/barcode workflow, KDP, IngramSpark, ISBN/VLB records, and the controlled release manifest.
