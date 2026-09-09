@@ -1,8 +1,8 @@
 # Companion Code
 
-This directory accompanies the current **v3.19 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
+This directory accompanies the current **v3.20 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
 
-The deterministic reference environment and principal companion-code architecture were established during the validated technical-core programme. The **Source Code** paragraph sequence in v3.19 is byte-for-byte identical to v3.18, so the existing companion-code baseline remains authoritative while v3.19 adds six evidence-based production case files to Chapters 23-28.
+The deterministic reference environment and principal companion-code architecture were established during the validated technical-core programme. The **Source Code** paragraph sequence in v3.20 is byte-for-byte identical to v3.19, so the existing companion-code baseline remains authoritative while v3.20 adds twelve explanatory engineering diagrams to the manuscript.
 
 ## What is implemented
 
@@ -63,12 +63,12 @@ Raw third-party datasets are not part of Git history. The repository records pro
 - Confirmed errata: [`../ERRATA.md`](../ERRATA.md)
 - Suspected defects: open a repository Issue and identify the book version, location, evidence, and environment where relevant.
 
-## Case-study boundary
+## Diagram and case-study boundary
 
-v3.19 adds case studies to the manuscript, not new companion executables. Reader reports about a case-study claim should include the exact claim and the primary/authoritative source evidence supporting the correction.
+v3.19 added six evidence-based case files and v3.20 added twelve explanatory diagrams to the manuscript. These additions do not change the controlled companion-code execution baseline. Reader reports about a case-study claim should include primary/authoritative source evidence; reports about a diagram should identify the figure and the specific technical relationship that appears incorrect or misleading.
 
 ## Code-map boundary
 
-The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters. A deeper stable chapter/code map remains part of the A+++ programme.
+The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters. A deeper stable chapter-to-code map remains part of the A+++ programme.
 
 The publication rule is simple: **do not confuse illustrative output with verified output**. Any result printed in the book should either be reproducibly generated under the stated reference environment or clearly labelled representative/version-sensitive.
