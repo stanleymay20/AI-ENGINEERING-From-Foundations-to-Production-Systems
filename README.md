@@ -5,25 +5,36 @@
 
 A project-based AI engineering textbook covering the path from foundations and data work through machine learning, deep learning, NLP, computer vision, reinforcement learning, production deployment, MLOps, retrieval-augmented generation, tool-using agents, evaluation, security, observability, and production governance.
 
-## Repository status
+## Reader links
 
-This repository is the canonical **reader companion, reproducibility, QA, and release-metadata repository** for the publication-controlled v2.4 edition.
+- **Errata and corrections:** [ERRATA.md](ERRATA.md)
+- **Book version / support / update policy:** [BOOK_VERSION.md](BOOK_VERSION.md)
+- **Dataset provenance and acquisition:** [companion/DATASETS.md](companion/DATASETS.md)
+- **Dataset registry:** [companion/dataset_registry.csv](companion/dataset_registry.csv)
+- **Principal runnable labs and reference checks:** [`companion/`](companion/)
+- **Report a suspected book or companion-code defect:** use this repository's GitHub Issues and include the book version, location, evidence, and environment where relevant.
 
-Current controlled interior status:
+## Controlled publication status
 
-- 6×9 technical-publisher layout
-- 30 chapters
-- 26 instructional figures
-- real-world dataset labs
-- code/output verification pass
-- semantic table reconstruction pass
-- figure integration and cross-reference pass
-- accessibility QA pass
-- print-interior PDF/DOCX maintained as controlled publication assets rather than casually duplicated into Git history
+The current controlled manuscript/interior is **v3.14**.
+
+Validated publication evidence includes:
+
+- exact **6 × 9 in** print interior;
+- **388 pages**;
+- 30 chapters and five appendices;
+- 26 instructional figures with alternative text;
+- controlled code/output verification from the technical validation programme;
+- all-page print visual QA;
+- curated archival PDF navigation plus a separate retailer print-upload derivative;
+- reflowable EPUB 3 with MathML, figures, code blocks, semantic navigation, and accessibility metadata;
+- official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
+
+The controlled DOCX/PDF/EPUB publication masters remain release artifacts outside ordinary Git history. This repository is the canonical reader companion, reproducibility, errata, QA, and release-metadata surface for those masters.
 
 ## Quick start
 
-The exact deterministic reference environment uses Python 3.13.5. If your version manager understands `.python-version`, it can select the intended interpreter automatically.
+The deterministic reference environment uses Python 3.13.5.
 
 ```bash
 python -m venv .venv
@@ -32,7 +43,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-Run the deterministic checks with:
+Run deterministic checks with:
 
 ```bash
 python companion/reference_assertions.py
@@ -41,19 +52,19 @@ python companion/reference_output_smoke.py
 
 ## Dataset quick start
 
-The repository does not redistribute raw third-party datasets. Instead, it provides a controlled registry plus reproducible acquisition tooling.
+Raw third-party datasets are not casually redistributed. Use the controlled acquisition tooling:
 
 ```bash
 python companion/download_datasets.py --standard
 ```
 
-To prepare every downloadable dataset used by the book, including the large UCI archives and MovieLens:
+For all downloadable datasets, including large UCI archives and MovieLens where permitted:
 
 ```bash
 python companion/download_datasets.py --all --include-large --include-movielens
 ```
 
-See [`companion/DATASETS.md`](companion/DATASETS.md) and [`companion/dataset_registry.csv`](companion/dataset_registry.csv) for provenance, licensing/terms, chapter coverage, and redistribution policy.
+Always review the dataset registry and current upstream terms before redistribution.
 
 ## Repository layout
 
@@ -62,19 +73,20 @@ companion/      principal runnable labs, dataset helpers, and reference tests
 publishing/     imprint, ISBN, retailer metadata, pricing, and production planning
 qa/             publication, code, dataset, table, figure, and layout QA evidence
 release/        release metadata and checksums for frozen editions
-requirements.txt
-pyproject.toml
-.python-version
+ERRATA.md       controlled post-publication correction register
+BOOK_VERSION.md edition, currency, support, and freeze policy
 ```
 
-The book promises standalone scripts for the **major assessed labs**. It does not claim that every instructional code cell in all 30 chapters is duplicated as a separate `.py` file. Notebook-style or sequential examples remain in the book; principal applied labs are maintained under `companion/`.
+## Reproducibility policy
 
-## Reproducibility
+The companion separates deterministic reference checks from network-, data-, hardware-, and service-dependent labs. Results are not represented as locally verified unless the relevant execution path was actually run. Version-sensitive examples may legitimately vary across supported environments.
 
-The companion examples separate deterministic reference checks from network/data-dependent labs. Where a dataset must be downloaded, its provenance and licensing are recorded in the dataset registry, and results are not represented as locally verified unless the relevant execution path was actually run.
+The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters.
 
-The exact reference-test dependency pins are in `companion/requirements-reference.txt`. Broader supported ranges for ordinary reader work are retained in the companion-specific requirement files.
+## Reader support boundary
 
-## Publication note
+Please report reproducible defects in the book, companion code, controlled dataset instructions, accessibility, or compatibility regressions through GitHub Issues. General debugging of unrelated local environments, cloud billing/accounts, third-party APIs, hardware, or custom projects is outside the book errata process.
 
-The technical interior is controlled, but commercial release remains gated on final ISBN/imprint assignment, retailer-specific cover wraps, final EPUBCheck, retailer preview/preflight, and a physical proof. See `qa/COMMERCIAL_RELEASE_GATE.md` and `qa/V2_4_EXTERNAL_DIAGNOSTIC_RECHECK.md`.
+## Commercial-release boundary
+
+The manuscript/interior is validated, but commercial publication still requires final imprint/ISBN decisions, format-specific covers, retailer metadata and pricing, upload/preflight, and physical-proof acceptance. Those are distribution gates rather than evidence that the validated technical content is defective.
