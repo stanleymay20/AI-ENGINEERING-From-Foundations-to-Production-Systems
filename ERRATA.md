@@ -4,7 +4,9 @@ This is the controlled errata register for *AI Engineering: From Foundations to 
 
 ## Current status
 
-The controlled manuscript/interior version is **v3.14**.
+The controlled manuscript/interior version is **v3.15**.
+
+v3.15 supersedes the pre-release v3.14 interior with a production-layout refinement: Part-opening chapters were moved upward to remove excessive top whitespace, their first substantive introduction sections were forced to the following page, and the Part IV opener was brought into the same clean first-page header/footer treatment as the other Parts. Chapter start pages and the 388-page pagination remain unchanged.
 
 No confirmed post-publication errata are recorded at release-candidate freeze.
 
