@@ -1,8 +1,8 @@
 # AI Engineering — Pricing and Format Strategy
 
-**Prepared:** 7 September 2026; pagination refreshed for v3.16 on 9 September 2026  
+**Prepared:** 7 September 2026; pagination refreshed for v3.17 on 9 September 2026  
 **Working imprint candidate:** ScrollLibrary Press  
-**Current controlled interior:** v3.16, **390 pages**, 6×9 in  
+**Current controlled interior:** v3.17, **406 pages**, 6×9 in  
 **Print-cost scenario below:** black-ink interior; final ink/paper configuration remains an owner/platform decision
 
 ## Recommended launch formats
@@ -27,7 +27,7 @@ These are planning anchors, not locked retail prices. Final prices must be recal
 
 ### Positioning rationale
 
-The book is a 390-page professional technical title with 30 chapters, five appendices, companion code, controlled reproducibility infrastructure, errata/version governance, and a production-oriented AI engineering scope. It should be priced as a professional technical book rather than a commodity quick-start title.
+The book is a 406-page professional technical title with 30 chapters, five appendices, companion code, chapter-level primary sources/further reading, controlled reproducibility infrastructure, errata/version governance, and a production-oriented AI engineering scope. It should be priced as a professional technical book rather than a commodity quick-start title.
 
 Any competitor-price examples or royalty-band assumptions used in planning must be rechecked at the time of submission because retailer pricing and royalty rules can change.
 
@@ -38,18 +38,18 @@ The earlier planning capture used the following Amazon.de black-ink regular-trim
 - fixed cost: €0.75
 - per page: €0.012
 
-At **390 pages**, that scenario gives an estimated paperback print cost of:
+At **406 pages**, that scenario gives an estimated paperback print cost of:
 
-**€0.75 + (390 × €0.012) = €5.43**
+**€0.75 + (406 × €0.012) = €5.622** — approximately **€5.62** before any later platform changes.
 
 The earlier hardcover planning capture used:
 
 - fixed cost: €4.50
 - per page: €0.012
 
-At **390 pages**, that scenario gives an estimated hardcover print cost of:
+At **406 pages**, that scenario gives an estimated hardcover print cost of:
 
-**€4.50 + (390 × €0.012) = €9.18**
+**€4.50 + (406 × €0.012) = €9.372** — approximately **€9.37** before any later platform changes.
 
 These figures are planning calculations only. Recheck the live KDP calculator/rules before pricing or publication, especially if the final interior is color, the paper/binding changes, or marketplace rates are updated.
 
@@ -98,4 +98,4 @@ No price is locked until all of the following are complete:
 
 ## Controlled rule
 
-If the final print configuration changes the page count, update the pricing model and cover/spine calculations from the new frozen interior. Do not use the old 394-page v2.4 assumptions for the current v3.16 release.
+If the final print configuration changes the page count, update the pricing model and cover/spine calculations from the new frozen interior. Do not use the old 390-page v3.16 assumptions for the current v3.17 release.
