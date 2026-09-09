@@ -6,40 +6,53 @@
 - Author: Stanley Osei-Wusu
 - Edition: Code-Verified Illustrated Study Edition · 2026
 - Edition number: **First Edition**
-- Controlled version: **v3.20**
-- Print interior: **420 physical pages**, exact 6 × 9 in
+- Controlled version: **v3.21 — FROZEN / AUTHORITATIVE**
+- Print interior: **440 physical pages**, exact 6 × 9 in
 - Main matter: folio **1** begins after ten front-matter pages
-- Instructional figures: **38 total** (26 retained + 12 new)
-- Archival PDF navigation: **53 curated entries**
-- Retailer print-upload derivative: **0 bookmarks / 0 annotations or links / no document metadata stream**
+- Instructional figures: **38 total**
+- Professional Subject Index: starts at folio **413**
+- Archival PDF navigation: **53 curated bookmarks / 47 links**
+- Retailer print-upload derivative: **0 bookmarks / 0 annotations or links / no XMP / no `/Info` dictionary**
 - Official EPUB validation: EPUBCheck 5.3.0 under EPUB 3.3 rules — **0 fatals / 0 errors / 0 warnings / 0 infos**
 
-## v3.20 Explanatory Engineering Diagrams pass
+## Frozen master SHA-256 values
 
-v3.20 supersedes v3.19 as the controlled manuscript/interior.
+- DOCX: `dedee8e8659770f598d793736de7fbee5457de17a779dd80b73514d49deb6e38`
+- Archival PDF: `ac1dbf6a5bf9ba97a40b46e222d281359917db4d9f14f4a22b46ec92dd73f0f7`
+- Retailer print PDF: `33742bae3a83390f2bb86d343bf13f9030e4c173348ba65e369a8d106865c132`
+- EPUB 3: `54ec846d9543b8cebfc48e0aaafd4d22f09c8f2c456d892aec18155008795518`
 
-This pass adds twelve explanatory engineering diagrams across the curriculum while preserving the validated production case studies, source-code sequence, and earlier Table 1-1 layout repair. The diagrams strengthen visual mental models for neural-network training, NLP/conversational systems, Transformer/model-adaptation choices, production inference, MLOps, RAG evaluation, agent trust boundaries, observability, and incident response.
+The controlled publication binaries remain outside ordinary Git history. These hashes identify the frozen v3.21 masters.
+
+## v3.21 forensic repair and professional-index pass
+
+v3.21 supersedes v3.20 as the controlled manuscript/interior.
+
+The release integrates the accepted forensic repair set, including the corrected Appendix C answer guide, targeted mathematical/evaluation corrections, the Chapter 21 GAN-objective repair, leakage-safe Chapter 22 LSTM preprocessing and evaluation, current Chapter 23 FastAPI/container wording, a complete Chapter 25 DDP example, Chapter 26 responsible-AI/differential-privacy corrections, and a professional subject index.
 
 ## Validation state
 
-- **420/420 pages manually visually reviewed.**
-- 38/38 instructional figures present with non-empty alternative text.
-- DOCX accessibility: 0 high / 0 medium / 0 low.
-- 121/121 Source Code paragraphs match the v3.19 sequence exactly.
-- 101 Python-parsable blocks pass AST parsing; 20 shell/config/prompt/diagram blocks are excluded from Python AST classification.
-- All 30 chapter and five appendix starts reconcile with the v3.20 TOC.
-- Table 1-1 begins on physical page 15 / main-matter folio 5.
-- Exact archival PDF geometry: 420/420 pages at 432 × 648 pt.
-- Exact-base-to-archival rendering: 420/420 identical.
-- Retailer print derivative renders identically to archival on 420/420 pages.
-- Archival PDF retains title/author metadata, 53 curated bookmarks and 47 links.
-- Retailer PDF contains 0 bookmarks, 0 links/annotations, and no metadata stream.
-- EPUB contains 57 XHTML files, 38 images, 736 MathML elements, 181 preformatted code blocks, semantic navigation and accessibility metadata.
-- EPUBCheck 5.3.0: 0 fatals / 0 errors / 0 warnings / 0 infos.
+- complete visual QA across the final 440-page lineage;
+- 7/7 DOCX sections are 6 × 9 in;
+- 38/38 instructional figures have non-empty alternative text;
+- DOCX accessibility: 0 high / 0 medium / 0 low;
+- 121/121 Source Code blocks retained;
+- 119 code blocks unchanged from v3.20;
+- exactly two intentional repaired code blocks: Chapter 22 LSTM and Chapter 25 DDP;
+- 101 Python-classified blocks pass AST parsing; 20 intentional non-Python/non-AST exclusions;
+- all 30 chapter and five appendix starts reconcile with the final v3.21 TOC;
+- professional subject index integrated at folio 413;
+- archival PDF: 440/440 pages at exact 432 × 648 pt, 53 curated bookmarks, 47 links, 0 non-link annotations, tagged structure and metadata retained;
+- retailer PDF: 440/440 pages at exact 432 × 648 pt, 0 bookmarks, 0 links, 0 annotations, no XMP and no `/Info` dictionary;
+- archival-to-retailer render identity: 440/440 PASS;
+- EPUB custom structural suite: 0 errors / 0 warnings;
+- EPUB contains 57 XHTML files, 38 images, 38/38 image alt texts, 739 MathML elements, 181 preformatted code blocks, semantic navigation and accessibility metadata;
+- fresh official EPUBCheck 5.3.0: **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
 ## Canonical reader resources
 
 - Repository: https://github.com/stanleymay20/AI-ENGINEERING-From-Foundations-to-Production-Systems
+- Chapter-to-code map: `CHAPTER_TO_CODE_MAP.md`
 - Errata: `ERRATA.md`
 - Dataset provenance and acquisition: `companion/DATASETS.md` and `companion/dataset_registry.csv`
 - Reproducibility checks: `companion/`
@@ -54,11 +67,17 @@ AI libraries, model APIs, cloud services, security guidance, and platform interf
 
 ## Freeze policy
 
-A frozen publication version is immutable. Substantive corrections create a new controlled version and trigger the relevant code, layout, figure, PDF, EPUB, accessibility, metadata, sourcing, and checksum gates.
+Frozen v3.21 is immutable. Any substantive correction to manuscript text, code, equations, figures, captions, index, TOC, pagination, front/back matter, PDF navigation/metadata, or EPUB content creates **v3.22+** and triggers the materially affected code, layout, figure, PDF, EPUB, accessibility, metadata, sourcing, and checksum gates.
 
 ## A+++ programme boundary
 
-The evidence-based production-case-study and explanatory-diagram targets are closed. Remaining competitive work is a deeper professional subject index/stable chapter-to-code map, independent technical review, and professional copyedit/proofread.
+The internal forensic-repair, explanatory-diagram, professional-index, chapter-to-code-map, accessibility, PDF and EPUB validation targets are closed for v3.21. Remaining work is external/commercial:
+
+- genuine independent ML/deep-learning technical review;
+- genuine independent MLOps/production technical review;
+- genuine independent LLM/RAG/agent technical review;
+- professional copyedit/proofread where still required;
+- final print-provider/retailer preflight and physical proof.
 
 ## Commercial metadata boundary
 
@@ -76,4 +95,4 @@ The following must be supplied from real publishing decisions and must not be fa
 
 ## Commercial-release boundary
 
-Manuscript/interior validation and metadata architecture do not by themselves complete commercial publication. Final identifier/imprint decisions, format-specific covers, retailer upload/preflight, pricing, and physical-proof acceptance remain separate distribution steps.
+The frozen v3.21 manuscript/interior and its QA evidence do not by themselves complete commercial publication. Final identifier/imprint decisions, format-specific covers, retailer upload/preflight, pricing, and physical-proof acceptance remain separate distribution steps.
