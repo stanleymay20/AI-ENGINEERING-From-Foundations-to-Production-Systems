@@ -1,10 +1,10 @@
-# AI Engineering — Commercial Metadata Master v3.16
+# AI Engineering — Commercial Metadata Master v3.17
 
 Controlled book: **AI Engineering: From Foundations to Production Systems**  
 Author: **Stanley Osei-Wusu**  
 Edition: **Code-Verified Illustrated Study Edition · 2026**  
-Controlled publication build: **v3.16**  
-Interior: **390 pages, 6 × 9 in, English**
+Controlled publication build: **v3.17**  
+Interior: **406 pages, 6 × 9 in, English**
 
 ## 1. Canonical bibliographic identity
 
@@ -20,7 +20,7 @@ Interior: **390 pages, 6 × 9 in, English**
 - **Language:** English (en-US)
 - **Audience:** General/Adult; professional, academic, university, graduate, and self-directed technical learners
 - **Series:** None
-- **Page count:** 390
+- **Page count:** 406
 - **Trim size:** 6 × 9 in (152.4 × 228.6 mm)
 - **Illustrations:** 26 instructional figures
 - **Companion repository:** https://github.com/stanleymay20/AI-ENGINEERING-From-Foundations-to-Production-Systems
@@ -53,13 +53,13 @@ These must not be fabricated or embedded until assigned:
 
 ## 4. Short description
 
-**AI Engineering** is a project-based guide to building real-world AI systems from foundations to production. It combines Python, machine learning, deep learning, NLP, computer vision, transformers, MLOps, RAG, AI agents, security, observability, and responsible AI with reproducibility and deployment-focused practice.
+**AI Engineering** is a project-based guide to building real-world AI systems from foundations to production. It combines Python, machine learning, deep learning, NLP, computer vision, transformers, parameter-efficient adaptation, inference engineering, MLOps, RAG, AI agents, security, observability, and responsible AI with reproducibility and deployment-focused practice.
 
 ## 5. Full retailer description
 
 AI models are only one part of a production AI system. Real engineering begins when data must be acquired and validated, models must be evaluated under realistic conditions, services must be deployed and monitored, and failures must be handled safely.
 
-**AI Engineering: From Foundations to Production Systems** provides an end-to-end, project-based path from Python and data fundamentals through machine learning, deep learning, NLP, computer vision, reinforcement learning, transformers, time-series systems, model deployment, MLOps, retrieval-augmented generation, tool-using agents, LLMOps, observability, security, and responsible AI.
+**AI Engineering: From Foundations to Production Systems** provides an end-to-end, project-based path from Python and data fundamentals through machine learning, deep learning, NLP, computer vision, reinforcement learning, transformers, parameter-efficient adaptation, time-series systems, model deployment, inference engineering, MLOps, retrieval-augmented generation, tool-using agents, LLMOps, observability, security, and responsible AI.
 
 Across 30 chapters and five appendices, readers learn how to:
 
@@ -75,7 +75,7 @@ Across 30 chapters and five appendices, readers learn how to:
 
 The book is designed for software developers, data scientists, machine-learning practitioners, students, technical leads, and product builders who want to understand not only how AI models work, but how dependable AI systems are engineered and operated.
 
-The Code-Verified Illustrated Study Edition includes a companion GitHub repository, controlled dataset-acquisition guidance, errata and version tracking, accessibility support, MathML-based digital mathematics, and a reproducibility-focused study architecture.
+The Code-Verified Illustrated Study Edition includes a companion GitHub repository, controlled dataset-acquisition guidance, errata and version tracking, accessibility support, MathML-based digital mathematics, chapter-level primary sources/further reading, and a reproducibility-focused study architecture.
 
 ## 6. KDP keyword set — 7 slots
 
@@ -89,11 +89,9 @@ The Code-Verified Illustrated Study Edition includes a companion GitHub reposito
 
 ## 7. Expanded discovery keywords
 
-artificial intelligence; AI engineering; production AI; machine learning; deep learning; MLOps; LLMOps; generative AI; large language models; LLM engineering; retrieval augmented generation; RAG; vector search; embeddings; AI agents; tool-using agents; natural language processing; computer vision; reinforcement learning; time series; model deployment; model monitoring; observability; responsible AI; AI security; Python; data science; reproducible machine learning
+artificial intelligence; AI engineering; production AI; machine learning; deep learning; MLOps; LLMOps; generative AI; large language models; LLM engineering; parameter-efficient fine-tuning; inference engineering; retrieval augmented generation; RAG; vector search; embeddings; AI agents; tool-using agents; natural language processing; computer vision; reinforcement learning; time series; model deployment; model monitoring; observability; responsible AI; AI security; Python; data science; reproducible machine learning
 
 ## 8. BISAC recommendations
-
-Recommended primary-to-secondary order:
 
 1. **COM004000 — COMPUTERS / Artificial Intelligence / General**
 2. **COM094000 — COMPUTERS / Data Science / Machine Learning**
@@ -137,8 +135,8 @@ Stanley Osei-Wusu is an AI and data practitioner, product builder, and author fo
 
 ## 13. Selling points / retailer bullets
 
-- End-to-end coverage: foundations, ML, deep learning, NLP, vision, transformers, time series, deployment, MLOps, RAG, agents, security, observability, and governance.
-- Project-based learning across 30 chapters and five appendices.
+- End-to-end coverage: foundations, ML, deep learning, NLP, vision, transformers, time series, deployment, inference engineering, MLOps, RAG, agents, security, observability, and governance.
+- Project-based learning across 30 chapters and five appendices, with chapter-level primary sources and further reading.
 - Real-world dataset provenance and controlled acquisition guidance.
 - Explicit reference-tested, version-sensitive, and conceptual code statuses.
 - Companion GitHub repository with errata, version policy, reproducibility checks, and reader reporting.
@@ -149,20 +147,20 @@ Stanley Osei-Wusu is an AI and data practitioner, product builder, and author fo
 
 ### Paperback
 - Trim: 6 × 9 in
-- Interior pages: 390
-- Interior file: `AI_Engineering_v3_16_6x9_PRINT_UPLOAD_MASTER.pdf`
+- Interior pages: 406
+- Interior file: `AI_Engineering_v3_17_6x9_PRINT_UPLOAD_MASTER.pdf`
 - ISBN: OPEN
 - Ink/paper: OPEN
 - Cover spine width: calculate only after ink/paper/platform choice is locked
 
 ### Hardcover
 - Launch: OPEN decision
-- Interior pages: 390
+- Interior pages: 406
 - ISBN: OPEN
 - Binding / paper / cover template: OPEN
 
 ### EPUB
-- File: `AI_Engineering_v3_16_EPUB3_PUBLICATION_MASTER.epub`
+- File: `AI_Engineering_v3_17_EPUB3_PUBLICATION_MASTER.epub`
 - EPUBCheck 5.3.0 / EPUB 3.3: 0 fatals / 0 errors / 0 warnings / 0 infos
 - Owned ebook ISBN: OPEN if required for the chosen distribution path
 
