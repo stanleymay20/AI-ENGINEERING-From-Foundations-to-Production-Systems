@@ -2,7 +2,7 @@
 
 **Book:** *AI Engineering: From Foundations to Production Systems*  
 **Edition:** Code-Verified Illustrated Study Edition · 2026  
-**Controlled manuscript/interior:** v3.20  
+**Controlled manuscript/interior:** v3.21  
 
 This map helps readers locate the substantial runnable labs, dataset controls, reproducibility checks, and production scaffolds that accompany the book.
 
