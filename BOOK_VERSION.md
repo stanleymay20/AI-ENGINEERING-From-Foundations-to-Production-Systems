@@ -5,9 +5,15 @@
 - Book: *AI Engineering: From Foundations to Production Systems*
 - Author: Stanley Osei-Wusu
 - Edition: Code-Verified Illustrated Study Edition · 2026
-- Controlled version: **v3.14**
+- Controlled version: **v3.15**
 - Print interior: **388 pages**, exact 6 × 9 in
+- Archival PDF navigation: **51 curated entries**
+- Retailer print-upload derivative: **0 bookmarks / 0 annotations / no metadata stream**
 - Official EPUB validation: EPUBCheck 5.3.0 under EPUB 3.3 rules — **0 fatals / 0 errors / 0 warnings / 0 infos**
+
+## v3.15 production-layout refinement
+
+v3.15 supersedes the pre-release v3.14 interior. The Part/Chapter opener block was moved upward to remove excessive top whitespace, the first substantive introduction section of each Part-opening chapter was forced to begin on the following page, and the Part IV opener was given the same clean first-page header/footer treatment as the other Parts. The controlled chapter start pages and total 388-page pagination are unchanged.
 
 ## Canonical reader resources
 
