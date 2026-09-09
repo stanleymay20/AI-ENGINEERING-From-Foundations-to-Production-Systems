@@ -6,34 +6,41 @@
 - Author: Stanley Osei-Wusu
 - Edition: Code-Verified Illustrated Study Edition · 2026
 - Edition number: **First Edition**
-- Controlled version: **v3.18**
-- Print interior: **406 physical pages**, exact 6 × 9 in
+- Controlled version: **v3.19**
+- Print interior: **413 physical pages**, exact 6 × 9 in
 - Main matter: folio **1** begins after ten front-matter pages
 - Archival PDF navigation: **53 curated entries**
-- Retailer print-upload derivative: **0 bookmarks / 0 annotations or links / no document metadata stream**
+- Retailer print-upload derivative: **0 bookmarks / 0 annotations or links / no document metadata stream / no Info metadata**
 - Official EPUB validation: EPUBCheck 5.3.0 under EPUB 3.3 rules — **0 fatals / 0 errors / 0 warnings / 0 infos**
 
-## v3.18 production-layout repair
+## v3.19 Production Case Studies pass
 
-v3.18 supersedes v3.17 as the controlled manuscript/interior.
+v3.19 supersedes v3.18 as the controlled manuscript/interior.
 
-The technical Authority & Depth content introduced in v3.17 is preserved. This pass makes one controlled print-layout correction: **Table 1-1 — AI Engineering Lifecycle: Activities and Assistant Support** now begins on a clean new page at physical page 15 / main-matter folio 5.
+This pass adds six evidence-based engineering case files across Chapters 23-28:
 
-The total interior remains 406 pages, and all 30 chapter and five appendix start pages remain unchanged.
+- Knight Capital — deployment/change-control safety;
+- Zillow Offers — forecasting uncertainty interacting with operational feedback/capacity;
+- ChatGPT March 2023 — caching, concurrency, pooled connections, and tenant isolation;
+- NIST face-recognition evaluations — aggregate accuracy versus subgroup risk;
+- Air Canada chatbot — organizational accountability and grounding discipline, without misrepresenting the matter as an LLM/RAG-specific incident;
+- Uber ATG Tempe crash — human oversight and automation complacency as a safety analogue, without misrepresenting it as an LLM-agent incident.
+
+The source-code sequence is unchanged from v3.18. The Table 1-1 clean new-page repair is retained.
 
 ## Validation state
 
-- Table 1-1 new-page start: PASS.
-- 397/406 source-render pages are pixel-identical to v3.17.
-- Only pages 2, 5, and 14-20 changed; all nine were visually inspected.
+- 413/413 pages visually reviewed.
 - 26/26 instructional figures preserved with alternative text.
 - DOCX accessibility: 0 high / 0 medium / 0 low.
-- Source-code/output paragraph sequence unchanged from v3.17.
-- All 30 chapter and five appendix start pages remain unchanged.
-- Exact archival PDF geometry: 406/406 pages at 432 × 648 pt.
-- Source-normalized-to-archival rendering: 406/406 identical.
-- Retailer print derivative renders identically to the archival master on 406/406 pages.
-- EPUB structural/accessibility QA is clean.
+- 121/121 Source Code paragraphs match the v3.18 sequence exactly.
+- 101 Python-parsable blocks pass AST parsing; 20 shell/config/prompt/diagram blocks are excluded from Python AST classification.
+- All 30 chapter and five appendix starts reconcile with the v3.19 TOC.
+- Table 1-1 begins on physical page 15 / main-matter folio 5.
+- Exact archival PDF geometry: 413/413 pages at 432 × 648 pt.
+- Source crop to archival rendering: 413/413 identical.
+- Retailer print derivative renders identically to archival on 413/413 pages.
+- EPUB structural/accessibility QA: 0 errors / 0 warnings.
 - EPUBCheck 5.3.0: 0 fatals / 0 errors / 0 warnings / 0 infos.
 
 ## Canonical reader resources
@@ -45,23 +52,23 @@ The total interior remains 406 pages, and all 30 chapter and five appendix start
 
 ## Support boundary
 
-The repository accepts reproducible reports about book defects, companion-code defects, broken controlled acquisition instructions, accessibility defects, metadata defects, cross-reference defects, layout defects, and compatibility regressions affecting book examples. It is not a general-purpose help desk for unrelated Python, cloud-account, GPU, operating-system, or third-party service problems.
+The repository accepts reproducible reports about book defects, companion-code defects, broken controlled acquisition instructions, accessibility defects, metadata defects, cross-reference/layout defects, case-study sourcing defects, and compatibility regressions affecting book examples. It is not a general-purpose help desk for unrelated Python, cloud-account, GPU, operating-system, or third-party service problems.
 
 ## Currency policy
 
-AI libraries, model APIs, cloud services, security guidance, and platform interfaces change after publication. A later upstream change does not retroactively make an originally correct statement an erratum. Such changes are recorded as compatibility or currency notes when they materially affect a reader's ability to reproduce the book.
+AI libraries, model APIs, cloud services, security guidance, and platform interfaces change after publication. A later upstream change does not retroactively make an originally correct statement an erratum. Such changes are recorded as compatibility or currency notes when they materially affect reproducibility.
 
 ## Freeze policy
 
-A frozen publication version is immutable. Substantive corrections create a new controlled version and trigger the relevant code, layout, PDF, EPUB, accessibility, metadata, and checksum gates.
+A frozen publication version is immutable. Substantive corrections create a new controlled version and trigger the relevant code, layout, PDF, EPUB, accessibility, metadata, sourcing, and checksum gates.
 
 ## A+++ programme boundary
 
-v3.18 closes the Table 1-1 layout repair. The broader competitive A+++ programme remains open for evidence-based production case studies, additional explanatory engineering diagrams, a deeper professional index/code map, and independent human technical/copy review.
+The evidence-based production case-study target is closed in v3.19. The remaining competitive A+++ programme is additional explanatory engineering diagrams, a deeper professional index/code map, independent technical review, and professional copyedit/proofread.
 
 ## Commercial metadata boundary
 
-The following must be supplied from real publishing decisions and must not be fabricated in the manuscript or repository:
+The following must be supplied from real publishing decisions and must not be fabricated:
 
 - final publisher/imprint name;
 - ISBN for each applicable format;
