@@ -11,7 +11,7 @@ body:
     id: version
     attributes:
       label: Book version / edition
-      placeholder: "v3.16, First Edition · Code-Verified Illustrated Study Edition · 2026"
+      placeholder: "v3.17, First Edition · Code-Verified Illustrated Study Edition · 2026"
     validations:
       required: true
   - type: input
@@ -23,7 +23,7 @@ body:
     id: location
     attributes:
       label: Location
-      description: Print page/main-matter folio or EPUB chapter/section, plus figure/code/equation identifier if applicable.
+      description: Print page/main-matter folio or EPUB chapter/section, plus figure/code/equation/cross-reference identifier if applicable.
     validations:
       required: true
   - type: dropdown
