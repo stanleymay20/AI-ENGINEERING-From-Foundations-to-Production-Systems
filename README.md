@@ -3,7 +3,7 @@
 **Author:** Stanley Osei-Wusu  
 **Edition:** Code-Verified Illustrated Study Edition · 2026
 
-A project-based AI engineering textbook covering the path from foundations and data work through machine learning, deep learning, NLP, computer vision, reinforcement learning, production deployment, MLOps, retrieval-augmented generation, tool-using agents, evaluation, security, observability, and production governance.
+A project-based AI engineering textbook covering foundations, machine learning, deep learning, NLP, computer vision, reinforcement learning, deployment, MLOps, RAG, tool-using agents, evaluation, security, observability, governance, and production engineering judgment.
 
 ## Reader links
 
@@ -12,34 +12,42 @@ A project-based AI engineering textbook covering the path from foundations and d
 - **Dataset provenance and acquisition:** [companion/DATASETS.md](companion/DATASETS.md)
 - **Dataset registry:** [companion/dataset_registry.csv](companion/dataset_registry.csv)
 - **Principal runnable labs and reference checks:** [`companion/`](companion/)
-- **Report a suspected book or companion-code defect:** use this repository's GitHub Issues and include the book version, location, evidence, and environment where relevant.
+- **Report a suspected defect:** use GitHub Issues and include the book version, location, evidence, and environment where relevant.
 
 ## Controlled publication status
 
-The current controlled manuscript/interior is **v3.18**.
+The current controlled manuscript/interior is **v3.19**.
 
-v3.18 is a focused production-layout repair that supersedes v3.17. The technical Authority & Depth content from v3.17 is preserved, while **Table 1-1 — AI Engineering Lifecycle: Activities and Assistant Support** now begins on a clean new page at physical page 15 / main-matter folio 5.
+v3.19 is the **Production Case Studies** pass. It supersedes v3.18 by adding six evidence-based engineering case files across Chapters 23-28 while preserving the validated source-code sequence and the Table 1-1 layout repair.
 
-The controlled interior remains **406 pages, exact 6 × 9 in**. All 30 chapter and five appendix start pages remain unchanged.
+The six case files cover:
+
+1. Knight Capital — deployment/change-control failure.
+2. Zillow Offers — forecasting uncertainty interacting with operational capacity and feedback.
+3. ChatGPT March 2023 — caching, concurrency, pooled connections, and tenant isolation.
+4. NIST face-recognition evaluations — aggregate accuracy versus subgroup risk.
+5. Air Canada chatbot — grounding/accountability; not represented as proof of an LLM/RAG-specific incident.
+6. Uber ATG Tempe crash — human oversight and automation complacency as a safety analogue; not represented as an LLM-agent incident.
+
+The controlled interior is **413 pages, exact 6 × 9 in**.
 
 Validated publication evidence includes:
 
-- exact **6 × 9 in** print interior;
-- **406 physical pages**;
-- Table 1-1 forced to a clean new-page start;
-- 397/406 source-render pages pixel-identical to v3.17; only pages 2, 5, and 14-20 changed, and all nine changed pages were visually inspected;
-- 30 chapters and five appendices with unchanged start pages;
+- 413/413 pages visually reviewed;
+- 30 chapters and five appendices reconciled with the v3.19 TOC;
+- Table 1-1 retained on its clean new-page start at physical page 15 / folio 5;
 - 26 instructional figures with alternative text;
-- DOCX accessibility audit: **0 high / 0 medium / 0 low**;
-- source-code/output paragraph sequence unchanged from v3.17;
-- curated **53-entry** archival PDF navigation plus a separate retailer print-upload derivative;
-- retailer print PDF with **0 bookmarks, 0 annotations/links, and no document metadata stream**;
-- source-normalized-to-archival rendering identity on **406/406 pages**;
-- archival-to-retailer rendering identity on **406/406 pages**;
-- reflowable EPUB 3 with 26 figures, alternative text, MathML, 181 preformatted code blocks, semantic navigation, and accessibility metadata;
+- DOCX accessibility: **0 high / 0 medium / 0 low**;
+- 121 Source Code paragraphs, byte-for-byte identical in sequence to v3.18;
+- 101 Python-parsable blocks passing AST parsing, with 20 shell/config/prompt/diagram blocks correctly excluded;
+- exact 6 × 9 archival PDF with **53 curated bookmarks** and **47 links**;
+- retailer print PDF with **0 bookmarks, 0 links/annotations, no metadata stream, and no Info metadata**;
+- source-crop-to-archival render identity on **413/413 pages**;
+- archival-to-retailer render identity on **413/413 pages**;
+- EPUB 3 with 26 figures, alternative text, **736 MathML elements**, **181 preformatted code blocks**, semantic navigation, and accessibility metadata;
 - official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
-The controlled DOCX/PDF/EPUB publication masters remain release artifacts outside ordinary Git history. This repository is the canonical reader companion, reproducibility, errata, QA, and release-metadata surface for those masters.
+The controlled DOCX/PDF/EPUB masters remain release artifacts outside ordinary Git history. This repository is the canonical reader companion, reproducibility, errata, QA, and release-metadata surface.
 
 ## Quick start
 
@@ -61,13 +69,11 @@ python companion/reference_output_smoke.py
 
 ## Dataset quick start
 
-Raw third-party datasets are not casually redistributed. Use the controlled acquisition tooling:
-
 ```bash
 python companion/download_datasets.py --standard
 ```
 
-For all downloadable datasets, including large UCI archives and MovieLens where permitted:
+For all downloadable datasets, including larger sources where permitted:
 
 ```bash
 python companion/download_datasets.py --all --include-large --include-movielens
@@ -75,31 +81,25 @@ python companion/download_datasets.py --all --include-large --include-movielens
 
 Always review the dataset registry and current upstream terms before redistribution.
 
-## Repository layout
-
-```text
-companion/      principal runnable labs, dataset helpers, and reference tests
-publishing/     imprint, ISBN, retailer metadata, pricing, and production planning
-qa/             publication, code, dataset, table, figure, and layout QA evidence
-release/        release metadata and checksums for frozen editions
-ERRATA.md       controlled post-publication correction register
-BOOK_VERSION.md edition, currency, support, and freeze policy
-```
-
 ## Reproducibility policy
 
 The companion separates deterministic reference checks from network-, data-, hardware-, and service-dependent labs. Results are not represented as locally verified unless the relevant execution path was actually run. Version-sensitive examples may legitimately vary across supported environments.
 
-The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters.
-
 ## Reader support boundary
 
-Please report reproducible defects in the book, companion code, controlled dataset instructions, accessibility, metadata, cross-references, or compatibility regressions through GitHub Issues. General debugging of unrelated local environments, cloud billing/accounts, third-party APIs, hardware, or custom projects is outside the book errata process.
+Please report reproducible defects in the book, companion code, controlled dataset instructions, accessibility, metadata, cross-references, case-study sourcing, or compatibility regressions through GitHub Issues. General debugging of unrelated environments, cloud billing/accounts, third-party APIs, hardware, or custom projects is outside the book errata process.
 
 ## A+++ programme boundary
 
-v3.18 closes the Table 1-1 layout repair. The competitive A+++ programme remains open for evidence-based production case studies, additional explanatory engineering diagrams, a deeper professional subject index/code map, and independent human technical/copy review.
+The evidence-based production case-study target is now closed in v3.19. The remaining competitive A+++ programme is:
+
+- additional explanatory engineering diagrams;
+- deeper professional subject index / stable code map;
+- independent ML/deep-learning review;
+- independent MLOps/production review;
+- independent LLM/RAG/agent review;
+- final professional copyedit/proofread.
 
 ## Commercial-release boundary
 
-Commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance. Those are distribution gates rather than evidence that the validated manuscript/interior is defective.
+Commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance.
