@@ -16,21 +16,28 @@ A project-based AI engineering textbook covering the path from foundations and d
 
 ## Controlled publication status
 
-The current controlled manuscript/interior is **v3.16**.
+The current controlled manuscript/interior is **v3.17**.
 
-v3.16 adds the professional publication metadata layer that was still thinner than major technical-publisher books. It adds a strengthened copyright/rights page, First Edition and controlled-build identification, explicit reader/audience positioning, prerequisites and hardware expectations, a "What This Book Is Not" boundary, conventions used in the book, edition/revision history, and a suggested citation. The technical 30-chapter core is unchanged from v3.15. Two front-matter pages were added, bringing the physical interior to **390 pages** while preserving the main-matter folio numbering and chapter starts.
+v3.17 is the **Authority & Depth** pass. It supersedes v3.16 by repairing stale Chapter 29 cross-references, adding targeted foundation-model adaptation depth in Chapter 19, adding production inference-engineering depth in Chapter 25, and adding a curated **Primary Sources and Further Reading** section to all 30 chapters. The source-code sequence is unchanged from v3.16.
+
+The expansion brings the physical interior to **406 pages** while preserving the 30-chapter architecture and controlled main-matter pagination model.
 
 Validated publication evidence includes:
 
 - exact **6 × 9 in** print interior;
-- **390 physical pages** with main matter still starting at folio 1;
+- **406 physical pages**;
 - 30 chapters and five appendices;
 - 26 instructional figures with alternative text;
-- controlled code/output verification inherited from the unchanged technical core;
-- changed-front-matter visual QA plus main-matter text/layout regression against v3.15;
+- DOCX accessibility audit: **0 high / 0 medium / 0 low**;
+- source-code sequence byte-for-byte unchanged from v3.16;
+- 101 Python-parsable source blocks passing AST parsing; 20 non-Python/config/prompt/diagram blocks explicitly excluded from Python AST classification;
+- all 30 chapter and five appendix starts reconciled with the TOC;
+- repaired Chapter 29 references to the current Chapter 27 RAG and Chapter 28 bounded-agent architecture;
 - curated **53-entry** archival PDF navigation plus a separate retailer print-upload derivative;
 - retailer print PDF with **0 bookmarks, 0 annotations/links, and no document metadata stream**;
-- reflowable EPUB 3 with MathML, figures, code blocks, semantic navigation, accessibility metadata, descriptive metadata, and subject metadata;
+- source-to-exact-PDF visual identity after removal of LibreOffice's blank bottom surplus on **406/406 pages**;
+- archival-to-retailer rendering identity on **406/406 pages**;
+- reflowable EPUB 3 with 26 figures, alternative text, MathML, 181 preformatted code blocks, semantic navigation, and accessibility metadata;
 - official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
 The controlled DOCX/PDF/EPUB publication masters remain release artifacts outside ordinary Git history. This repository is the canonical reader companion, reproducibility, errata, QA, and release-metadata surface for those masters.
@@ -88,8 +95,12 @@ The book promises standalone scripts for the major assessed labs, not a one-to-o
 
 ## Reader support boundary
 
-Please report reproducible defects in the book, companion code, controlled dataset instructions, accessibility, or compatibility regressions through GitHub Issues. General debugging of unrelated local environments, cloud billing/accounts, third-party APIs, hardware, or custom projects is outside the book errata process.
+Please report reproducible defects in the book, companion code, controlled dataset instructions, accessibility, metadata, cross-references, or compatibility regressions through GitHub Issues. General debugging of unrelated local environments, cloud billing/accounts, third-party APIs, hardware, or custom projects is outside the book errata process.
+
+## A+++ programme boundary
+
+v3.17 closes the Authority & Depth validation pass, but the competitive A+++ programme remains open for evidence-based production case studies, additional explanatory engineering diagrams, a deeper professional subject index/code map, and independent human technical/copy review.
 
 ## Commercial-release boundary
 
-The manuscript/interior and commercial metadata architecture are now substantially prepared, but commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance. Those are distribution gates rather than evidence that the validated technical content is defective.
+Commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance. Those are distribution gates rather than evidence that the validated manuscript/interior is defective.
