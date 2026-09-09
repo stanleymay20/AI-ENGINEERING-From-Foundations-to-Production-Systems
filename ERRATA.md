@@ -4,9 +4,11 @@ This is the controlled errata register for *AI Engineering: From Foundations to 
 
 ## Current status
 
-The controlled manuscript/interior version is **v3.16**.
+The controlled manuscript/interior version is **v3.17**.
 
-v3.16 supersedes the pre-release v3.15 interior with a professional publication-metadata expansion. It adds a strengthened copyright/rights page, First Edition and controlled-build identification, explicit audience positioning, prerequisites and hardware expectations, a "What This Book Is Not" boundary, conventions, edition/revision history, and a suggested citation. Two front-matter pages were added, bringing the physical interior to **390 pages** while preserving main-matter folio numbering and chapter starts. The 30 technical chapters were not substantively reopened in this pass.
+v3.17 supersedes the pre-release v3.16 interior with the **Authority & Depth** pass. It repairs stale Chapter 29 cross-references, adds targeted foundation-model adaptation depth in Chapter 19, adds production inference-engineering depth in Chapter 25, and adds curated **Primary Sources and Further Reading** sections to all 30 chapters. The source-code sequence is unchanged from v3.16.
+
+The physical interior is **406 pages**, exact 6 × 9 in. The v3.17 EPUB passed official EPUBCheck 5.3.0 under EPUB 3.3 rules with **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
 No confirmed post-publication errata are recorded at release-candidate freeze.
 
