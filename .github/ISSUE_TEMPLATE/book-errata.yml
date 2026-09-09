@@ -11,16 +11,36 @@ body:
     id: version
     attributes:
       label: Book version / edition
-      placeholder: "v3.15, Code-Verified Illustrated Study Edition · 2026"
+      placeholder: "v3.16, First Edition · Code-Verified Illustrated Study Edition · 2026"
     validations:
       required: true
+  - type: input
+    id: format
+    attributes:
+      label: Format
+      placeholder: "Paperback, hardcover, EPUB, or companion repository"
   - type: input
     id: location
     attributes:
       label: Location
-      description: Print page or EPUB chapter/section, plus figure/code/equation identifier if applicable.
+      description: Print page/main-matter folio or EPUB chapter/section, plus figure/code/equation identifier if applicable.
     validations:
       required: true
+  - type: dropdown
+    id: classification
+    attributes:
+      label: Suspected issue type
+      options:
+        - Technical statement or explanation
+        - Code or displayed output
+        - Equation or mathematical notation
+        - Figure or table
+        - Dataset/source/provenance
+        - Layout, navigation, or cross-reference
+        - Accessibility
+        - Bibliographic or retailer metadata
+        - Compatibility/currency change
+        - Other
   - type: textarea
     id: observed
     attributes:
@@ -30,8 +50,8 @@ body:
   - type: textarea
     id: evidence
     attributes:
-      label: Reproduction evidence
-      description: Include commands, output, dataset/version information, or authoritative references where relevant.
+      label: Reproduction or source evidence
+      description: Include commands, output, dataset/version information, screenshots, or authoritative references where relevant.
   - type: textarea
     id: environment
     attributes:
@@ -40,4 +60,4 @@ body:
   - type: textarea
     id: correction
     attributes:
-      label: Suggested correction
+      label: Suggested correction or clarification
