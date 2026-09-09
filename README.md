@@ -9,6 +9,7 @@ A project-based AI engineering textbook covering foundations, machine learning, 
 
 - **Errata and corrections:** [ERRATA.md](ERRATA.md)
 - **Book version / support / update policy:** [BOOK_VERSION.md](BOOK_VERSION.md)
+- **Chapter-to-code map:** [CHAPTER_TO_CODE_MAP.md](CHAPTER_TO_CODE_MAP.md)
 - **Dataset provenance and acquisition:** [companion/DATASETS.md](companion/DATASETS.md)
 - **Dataset registry:** [companion/dataset_registry.csv](companion/dataset_registry.csv)
 - **Principal runnable labs and reference checks:** [`companion/`](companion/)
@@ -83,9 +84,9 @@ Please report reproducible defects in the book, companion code, controlled datas
 
 ## A+++ programme boundary
 
-The production-case-study and explanatory-diagram targets are now closed. Remaining competitive work is:
+The production-case-study and explanatory-diagram targets are now closed. The chapter-to-code map is maintained as a reader-facing repository resource. Remaining competitive work is:
 
-- deeper professional subject index / stable chapter-to-code map;
+- deeper professional subject index;
 - independent ML/deep-learning review;
 - independent MLOps/production review;
 - independent LLM/RAG/agent review;
