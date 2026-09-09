@@ -16,26 +16,25 @@ A project-based AI engineering textbook covering the path from foundations and d
 
 ## Controlled publication status
 
-The current controlled manuscript/interior is **v3.17**.
+The current controlled manuscript/interior is **v3.18**.
 
-v3.17 is the **Authority & Depth** pass. It supersedes v3.16 by repairing stale Chapter 29 cross-references, adding targeted foundation-model adaptation depth in Chapter 19, adding production inference-engineering depth in Chapter 25, and adding a curated **Primary Sources and Further Reading** section to all 30 chapters. The source-code sequence is unchanged from v3.16.
+v3.18 is a focused production-layout repair that supersedes v3.17. The technical Authority & Depth content from v3.17 is preserved, while **Table 1-1 — AI Engineering Lifecycle: Activities and Assistant Support** now begins on a clean new page at physical page 15 / main-matter folio 5.
 
-The expansion brings the physical interior to **406 pages** while preserving the 30-chapter architecture and controlled main-matter pagination model.
+The controlled interior remains **406 pages, exact 6 × 9 in**. All 30 chapter and five appendix start pages remain unchanged.
 
 Validated publication evidence includes:
 
 - exact **6 × 9 in** print interior;
 - **406 physical pages**;
-- 30 chapters and five appendices;
+- Table 1-1 forced to a clean new-page start;
+- 397/406 source-render pages pixel-identical to v3.17; only pages 2, 5, and 14-20 changed, and all nine changed pages were visually inspected;
+- 30 chapters and five appendices with unchanged start pages;
 - 26 instructional figures with alternative text;
 - DOCX accessibility audit: **0 high / 0 medium / 0 low**;
-- source-code sequence byte-for-byte unchanged from v3.16;
-- 101 Python-parsable source blocks passing AST parsing; 20 non-Python/config/prompt/diagram blocks explicitly excluded from Python AST classification;
-- all 30 chapter and five appendix starts reconciled with the TOC;
-- repaired Chapter 29 references to the current Chapter 27 RAG and Chapter 28 bounded-agent architecture;
+- source-code/output paragraph sequence unchanged from v3.17;
 - curated **53-entry** archival PDF navigation plus a separate retailer print-upload derivative;
 - retailer print PDF with **0 bookmarks, 0 annotations/links, and no document metadata stream**;
-- source-to-exact-PDF visual identity after removal of LibreOffice's blank bottom surplus on **406/406 pages**;
+- source-normalized-to-archival rendering identity on **406/406 pages**;
 - archival-to-retailer rendering identity on **406/406 pages**;
 - reflowable EPUB 3 with 26 figures, alternative text, MathML, 181 preformatted code blocks, semantic navigation, and accessibility metadata;
 - official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
@@ -99,7 +98,7 @@ Please report reproducible defects in the book, companion code, controlled datas
 
 ## A+++ programme boundary
 
-v3.17 closes the Authority & Depth validation pass, but the competitive A+++ programme remains open for evidence-based production case studies, additional explanatory engineering diagrams, a deeper professional subject index/code map, and independent human technical/copy review.
+v3.18 closes the Table 1-1 layout repair. The competitive A+++ programme remains open for evidence-based production case studies, additional explanatory engineering diagrams, a deeper professional subject index/code map, and independent human technical/copy review.
 
 ## Commercial-release boundary
 
