@@ -16,7 +16,9 @@ A project-based AI engineering textbook covering the path from foundations and d
 
 ## Controlled publication status
 
-The current controlled manuscript/interior is **v3.14**.
+The current controlled manuscript/interior is **v3.15**.
+
+v3.15 is a production-layout refinement of the validated v3.14 manuscript. It moves the first substantive introduction section of each Part-opening chapter onto the following page, removes the excessive vertical gap above Part/Chapter opener content, and restores consistent clean Part-opening treatment across all six Parts. The 30 technical chapter starts and the 388-page pagination remain unchanged.
 
 Validated publication evidence includes:
 
@@ -25,8 +27,9 @@ Validated publication evidence includes:
 - 30 chapters and five appendices;
 - 26 instructional figures with alternative text;
 - controlled code/output verification from the technical validation programme;
-- all-page print visual QA;
-- curated archival PDF navigation plus a separate retailer print-upload derivative;
+- changed-page visual regression QA against the previously validated v3.14 interior;
+- curated **51-entry** archival PDF navigation plus a separate retailer print-upload derivative;
+- retailer print PDF with **0 bookmarks, 0 annotations/links, and no document metadata stream**;
 - reflowable EPUB 3 with MathML, figures, code blocks, semantic navigation, and accessibility metadata;
 - official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
