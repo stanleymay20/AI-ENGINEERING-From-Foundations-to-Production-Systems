@@ -1,10 +1,10 @@
-# AI Engineering — Commercial Metadata Master v3.19
+# AI Engineering — Commercial Metadata Master v3.20
 
 Controlled book: **AI Engineering: From Foundations to Production Systems**  
 Author: **Stanley Osei-Wusu**  
 Edition: **Code-Verified Illustrated Study Edition · 2026**  
-Controlled publication build: **v3.19**  
-Interior: **413 pages, 6 × 9 in, English**
+Controlled publication build: **v3.20**  
+Interior: **420 pages, 6 × 9 in, English**
 
 ## 1. Canonical bibliographic identity
 
@@ -20,9 +20,9 @@ Interior: **413 pages, 6 × 9 in, English**
 - **Language:** English (en-US)
 - **Audience:** General/Adult; professional, academic, university, graduate, and self-directed technical learners
 - **Series:** None
-- **Page count:** 413
+- **Page count:** 420
 - **Trim size:** 6 × 9 in (152.4 × 228.6 mm)
-- **Illustrations:** 26 instructional figures
+- **Illustrations:** 38 instructional figures, including 12 explanatory engineering diagrams added in v3.20
 - **Production case files:** 6 evidence-based engineering cases in Chapters 23-28
 - **Companion repository:** https://github.com/stanleymay20/AI-ENGINEERING-From-Foundations-to-Production-Systems
 - **Errata:** ERRATA.md
@@ -54,7 +54,7 @@ Do not fabricate these values:
 
 ## 4. Short description
 
-**AI Engineering** is a project-based guide to building real-world AI systems from foundations to production. It combines Python, machine learning, deep learning, NLP, computer vision, transformers, parameter-efficient adaptation, inference engineering, MLOps, RAG, AI agents, security, observability, responsible AI, reproducibility, and six evidence-based engineering case files.
+**AI Engineering** is a project-based guide to building real-world AI systems from foundations to production. It combines Python, machine learning, deep learning, NLP, computer vision, transformers, parameter-efficient adaptation, inference engineering, MLOps, RAG, AI agents, security, observability, responsible AI, reproducibility, six evidence-based engineering case files, and 38 instructional figures.
 
 ## 5. Full retailer description
 
@@ -64,7 +64,7 @@ AI models are only one part of a production AI system. Real engineering begins w
 
 Across 30 chapters and five appendices, readers learn how to move from notebooks to reproducible engineering workflows, work with attributable datasets, evaluate diverse AI systems, deploy and scale models, build RAG and agent systems, monitor drift and reliability, and apply security, privacy, fairness, explainability, and governance controls.
 
-Six evidence-based engineering case files add production judgment around deployment safety, forecasting/operations feedback, caching and tenant isolation, subgroup risk, organizational accountability, and automation oversight.
+Six evidence-based engineering case files add production judgment around deployment safety, forecasting/operations feedback, caching and tenant isolation, subgroup risk, organizational accountability, and automation oversight. Thirty-eight instructional figures—including twelve explanatory engineering diagrams added in v3.20—strengthen visual mental models for modern AI systems and production operations.
 
 The Code-Verified Illustrated Study Edition includes a companion GitHub repository, controlled dataset acquisition, errata/version tracking, chapter-level primary sources/further reading, accessibility support, MathML-based digital mathematics, and explicit distinctions between reference-tested, version-sensitive, and conceptual examples.
 
@@ -108,6 +108,7 @@ Optional alternate: **COM100000 — COMPUTERS / Artificial Intelligence / Genera
 - End-to-end coverage from foundations through production AI, RAG, agents, LLMOps, security, observability, and governance.
 - Project-based learning across 30 chapters and five appendices.
 - Six evidence-based engineering case files across Chapters 23-28.
+- 38 instructional figures, including 12 explanatory engineering diagrams for system architecture and production mental models.
 - Real-world dataset provenance and controlled acquisition guidance.
 - Explicit reference-tested, version-sensitive, and conceptual code statuses.
 - Companion repository with errata, version policy, reproducibility checks, and reader reporting.
@@ -117,20 +118,20 @@ Optional alternate: **COM100000 — COMPUTERS / Artificial Intelligence / Genera
 
 ### Paperback
 - Trim: 6 × 9 in
-- Interior pages: 413
-- Interior file: `AI_Engineering_v3_19_6x9_PRINT_UPLOAD_MASTER.pdf`
+- Interior pages: 420
+- Interior file: `AI_Engineering_v3_20_6x9_PRINT_UPLOAD_MASTER.pdf`
 - ISBN: OPEN
 - Ink/paper: OPEN
 - Cover spine width: calculate only after ink/paper/platform choice is locked
 
 ### Hardcover
 - Launch: OPEN decision
-- Interior pages: 413
+- Interior pages: 420
 - ISBN: OPEN
 - Binding/paper/cover template: OPEN
 
 ### EPUB
-- File: `AI_Engineering_v3_19_EPUB3_PUBLICATION_MASTER.epub`
+- File: `AI_Engineering_v3_20_EPUB3_PUBLICATION_MASTER.epub`
 - EPUBCheck 5.3.0 / EPUB 3.3: 0 fatals / 0 errors / 0 warnings / 0 infos
 - Owned ebook ISBN: OPEN if required
 
