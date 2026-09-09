@@ -1,10 +1,12 @@
 # Companion Code
 
-This directory accompanies the **v2.4 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
+This directory accompanies the current **v3.16 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
+
+The deterministic reference environment and principal companion-code architecture were established during the earlier validated technical-core programme and remain the reproducibility baseline for the unchanged technical chapters in v3.16.
 
 ## What is implemented
 
-The repository now includes:
+The repository includes:
 
 - real-data chapter scripts for the principal applied labs;
 - a controlled `dataset_registry.csv` covering every named dataset materially used by the current book, including the California Housing exercise;
@@ -54,5 +56,11 @@ requirements-reference.txt
 ## Dataset rule
 
 Raw third-party datasets are not part of the Git history. The repository instead records provenance, acquisition method, usage terms, and reproducible download/materialization instructions. `data/` remains gitignored.
+
+## Reader support and errata
+
+- Book/version policy: [`../BOOK_VERSION.md`](../BOOK_VERSION.md)
+- Confirmed errata: [`../ERRATA.md`](../ERRATA.md)
+- Suspected defects: open a repository Issue and identify the book version, location, evidence, and environment where relevant.
 
 The publication rule is simple: **do not confuse illustrative output with verified output**. Any result printed in the book should either be reproducibly generated under the stated reference environment or clearly labelled representative/version-sensitive.
