@@ -17,26 +17,28 @@ A project-based AI engineering textbook covering foundations, machine learning, 
 
 ## Controlled publication status
 
-The current frozen and authoritative manuscript/interior is **v3.21**.
+The current frozen and authoritative manuscript/interior is **v3.22**.
 
-v3.21 supersedes v3.20 after a controlled forensic repair and repagination pass. It integrates the corrected Appendix C answer guide, targeted mathematical/ML/production repairs, a leakage-safe Chapter 22 LSTM example, a complete Chapter 25 DDP example, responsible-AI source/definition repairs, and a professional subject index.
+v3.22 supersedes v3.21 with a reader-first terminology-pedagogy pass. All 30 chapters now preview important terminology before the learning objectives, important abbreviations are expanded in context, and Appendix F provides an alphabetical abbreviations-and-acronyms recall reference. The professional subject index remains the deeper contextual lookup surface.
 
-The controlled interior is **440 physical pages, exact 6 × 9 in**.
+The controlled interior is **445 physical pages, exact 6 × 9 in**.
 
 Validated publication evidence includes:
 
-- complete visual QA across the final 440-page lineage;
-- 30 chapters and five appendices reconciled to the final v3.21 TOC;
-- professional subject index integrated at folio 413;
+- controlled visual QA across the final v3.22 lineage, including all chapter-opening terminology previews and the repaginated back matter;
+- **30/30 chapter Key Terms & Acronyms previews** before Learning Objectives;
+- **100-entry Appendix F: Abbreviations and Acronyms**, beginning at folio 415;
+- Professional Subject Index beginning on a fresh page at folio 419;
 - **38 instructional figures**, with **38/38 alternative text**;
 - DOCX accessibility: **0 high / 0 medium / 0 low**;
-- **121/121 Source Code** blocks retained;
-- exactly two intended code replacements versus v3.20: Chapter 22 LSTM and Chapter 25 DDP;
-- **101 Python-classified blocks AST PASS**, with 20 intentional non-Python/non-AST exclusions;
-- archival PDF: **440 pages at exact 432 × 648 pt**, 53 curated bookmarks, 47 links, tagged structure and metadata retained;
-- retailer print PDF: **440 pages at exact 432 × 648 pt**, 0 bookmarks, 0 links/annotations, no XMP and no `/Info` dictionary;
-- archival-to-retailer render identity: **440/440 pages PASS**;
-- EPUB 3: 57 XHTML files, 38 images, 38/38 image alt texts, **739 MathML elements**, **181 preformatted code blocks**, semantic navigation and accessibility metadata;
+- **121/121 Source Code** blocks retained byte-for-byte in sequence from v3.21;
+- **101 Python-classified blocks AST PASS**, with the same 20 intentional non-Python/non-AST exclusions as v3.21;
+- 738 Word mathematical objects retained;
+- archival PDF: **445 pages at exact 432 × 648 pt**, **54 curated bookmarks**, 47 links, tagged structure and metadata retained;
+- retailer print PDF: **445 pages at exact 432 × 648 pt**, 0 bookmarks, 0 links/annotations, no XMP and empty document information metadata;
+- archival-to-retailer render identity: **445/445 pages PASS**;
+- zero out-of-bounds text blocks in the exact-trim archival PDF;
+- EPUB 3: 38 images with 38/38 alt texts, **739 MathML elements**, **181 preformatted code blocks**, semantic navigation, Appendix F navigation, and accessibility metadata;
 - official **EPUBCheck 5.3.0** under EPUB 3.3 rules: **0 fatals / 0 errors / 0 warnings / 0 infos**.
 
 The controlled DOCX/PDF/EPUB masters remain release artifacts outside ordinary Git history. This repository is the canonical reader companion, reproducibility, errata, QA, and release-metadata surface.
@@ -83,7 +85,7 @@ Please report reproducible defects in the book, companion code, controlled datas
 
 ## A+++ programme boundary
 
-The internal forensic-repair, explanatory-diagram, professional-index, chapter-to-code-map, accessibility, PDF and EPUB validation targets are closed for frozen v3.21. Remaining publication-programme work is external/commercial rather than a reason to reopen the frozen book without evidence of a defect:
+The internal forensic-repair, explanatory-diagram, professional-index, terminology-pedagogy, chapter-to-code-map, accessibility, PDF and EPUB validation targets are closed for frozen v3.22. Remaining publication-programme work is external/commercial rather than a reason to reopen the frozen book without evidence of a defect:
 
 - genuine independent ML/deep-learning technical review;
 - genuine independent MLOps/production technical review;
@@ -93,4 +95,4 @@ The internal forensic-repair, explanatory-diagram, professional-index, chapter-t
 
 ## Commercial-release boundary
 
-Commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance. No reviewer identity, endorsement, ISBN, proof approval, or retailer approval is implied by the frozen v3.21 technical state.
+Commercial publication still requires final publisher/imprint and ISBN decisions, format-specific covers, exact publication date, pricing, retailer upload/preflight, and physical-proof acceptance. No reviewer identity, endorsement, ISBN, proof approval, or retailer approval is implied by the frozen v3.22 technical state.
