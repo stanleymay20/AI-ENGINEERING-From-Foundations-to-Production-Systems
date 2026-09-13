@@ -1,6 +1,10 @@
-"""Chapter 17 reference: item-item recommendation with MovieLens latest-small.
+"""Optional legacy/reference recommender using MovieLens latest-small.
 
-MovieLens is opt-in because its current GroupLens terms must be reviewed:
+This script is retained for readers who independently choose to explore MovieLens.
+It is NOT the Chapter 17 assessed lab for the v3.23.8 publication-repair candidate;
+that lab now uses Online Retail II under CC BY 4.0. Review current GroupLens terms
+before downloading or using MovieLens:
+
     python companion/download_datasets.py --dataset movielens_latest_small --include-movielens
 """
 from __future__ import annotations
