@@ -19,11 +19,13 @@ A project-based AI engineering textbook covering foundations, machine learning, 
 
 The current frozen and authoritative manuscript/interior is **v3.22**.
 
+This `repair/v3.23.8-publication-candidate` branch synchronizes companion and dataset controls with a **v3.23.8 review candidate**. It does not promote or overwrite v3.22. Promotion requires the reopened code, layout, PDF, EPUB, accessibility, navigation and checksum gates to close.
+
 v3.22 supersedes v3.21 with a reader-first terminology-pedagogy pass. All 30 chapters now preview important terminology before the learning objectives, important abbreviations are expanded in context, and Appendix F provides an alphabetical abbreviations-and-acronyms recall reference. The professional subject index remains the deeper contextual lookup surface.
 
-The controlled interior is **445 physical pages, exact 6 × 9 in**.
+The frozen v3.22 interior is **445 physical pages, exact 6 × 9 in**.
 
-Validated publication evidence includes:
+Validated v3.22 publication evidence includes:
 
 - controlled visual QA across the final v3.22 lineage, including all chapter-opening terminology previews and the repaginated back matter;
 - **30/30 chapter Key Terms & Acronyms previews** before Learning Objectives;
@@ -70,8 +72,10 @@ python companion/download_datasets.py --standard
 For all downloadable datasets, including larger sources where permitted:
 
 ```bash
-python companion/download_datasets.py --all --include-large --include-movielens
+python companion/download_datasets.py --all --include-large
 ```
+
+Chapter 17 in the v3.23.8 candidate reuses **Online Retail II** for implicit-feedback recommendation; there is no MovieLens dependency in the candidate publication set.
 
 Always review the dataset registry and current upstream terms before redistribution.
 

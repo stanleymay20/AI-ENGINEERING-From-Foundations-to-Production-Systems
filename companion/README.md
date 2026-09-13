@@ -1,8 +1,8 @@
 # Companion Code
 
-This directory accompanies the current **v3.20 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems*.
+This directory accompanies the frozen **v3.22 Code-Verified Illustrated Study Edition** of *AI Engineering: From Foundations to Production Systems* and is being synchronized on this branch for the **v3.23.8 publication-repair review candidate**. v3.22 remains the frozen authority until an explicit successor promotion.
 
-The deterministic reference environment and principal companion-code architecture were established during the validated technical-core programme. The **Source Code** paragraph sequence in v3.20 is byte-for-byte identical to v3.19, so the existing companion-code baseline remains authoritative while v3.20 adds twelve explanatory engineering diagrams to the manuscript.
+The deterministic reference environment and principal companion-code architecture were established during the validated technical-core programme. Candidate-specific changes must pass fresh repository CI before they can be cited as successor evidence.
 
 ## What is implemented
 
@@ -22,7 +22,7 @@ See [DATASETS.md](DATASETS.md) for dataset setup and redistribution rules.
 
 Examples fall into three categories:
 
-1. **Deterministic reference checks** — expected outputs are regression-tested in a frozen reference environment.
+1. **Deterministic reference checks** — expected outputs are regression-tested in a controlled reference environment.
 2. **Real-data labs** — require official datasets and may need network access.
 3. **Version/service-sensitive examples** — TensorFlow, Transformers, MLflow, DVC, LIME, AIF360, Docker, hosted model APIs, and multi-GPU workflows. These must not be represented as locally verified unless that exact execution path was run.
 
@@ -36,7 +36,7 @@ chapter08_california_regression.py
 chapter08_hydraulic_features.py
 chapter09_wholesale_clustering.py
 chapter15_sms_spam.py
-chapter17_movielens_recommender.py
+chapter17_online_retail_recommender.py
 chapter22_power_timeseries_baseline.py
 chapter26_adult_fairness.py
 chapter27_rag_baseline.py
@@ -53,6 +53,10 @@ requirements-data.txt
 requirements-reference.txt
 ```
 
+## Chapter 17 dataset control
+
+The v3.23.8 candidate uses **Online Retail II** for the recommendation lab. It treats valid customer-product purchases as implicit feedback, preserves timestamps for chronological evaluation, and does not invent explicit ratings from transaction quantities. The dataset is the same controlled UCI source used in Chapters 3-4, DOI `10.24432/C5CG6D`, recorded as CC BY 4.0 in the registry.
+
 ## Dataset rule
 
 Raw third-party datasets are not part of Git history. The repository records provenance, acquisition method, usage terms, and reproducible materialization instructions. `data/` remains gitignored.
@@ -63,12 +67,8 @@ Raw third-party datasets are not part of Git history. The repository records pro
 - Confirmed errata: [`../ERRATA.md`](../ERRATA.md)
 - Suspected defects: open a repository Issue and identify the book version, location, evidence, and environment where relevant.
 
-## Diagram and case-study boundary
-
-v3.19 added six evidence-based case files and v3.20 added twelve explanatory diagrams to the manuscript. These additions do not change the controlled companion-code execution baseline. Reader reports about a case-study claim should include primary/authoritative source evidence; reports about a diagram should identify the figure and the specific technical relationship that appears incorrect or misleading.
-
 ## Code-map boundary
 
-The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters. A deeper stable chapter-to-code map remains part of the A+++ programme.
+The book promises standalone scripts for the major assessed labs, not a one-to-one `.py` duplicate of every instructional cell in all 30 chapters. See [`../CHAPTER_TO_CODE_MAP.md`](../CHAPTER_TO_CODE_MAP.md) for the controlled map.
 
 The publication rule is simple: **do not confuse illustrative output with verified output**. Any result printed in the book should either be reproducibly generated under the stated reference environment or clearly labelled representative/version-sensitive.

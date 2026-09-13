@@ -6,10 +6,9 @@ from pathlib import Path
 
 REQUIRED = {
     "online_retail_ii", "bike_sharing", "bank_marketing", "hydraulic_systems",
-    "wholesale_customers", "sms_spam", "movielens_latest_small", "household_power",
-    "adult", "iris", "breast_cancer", "digits", "california_housing",
-    "20_newsgroups", "mnist", "cifar10", "cifar100", "imdb_reviews",
-    "synthetic_sklearn",
+    "wholesale_customers", "sms_spam", "household_power", "adult", "iris",
+    "breast_cancer", "digits", "california_housing", "20_newsgroups", "mnist",
+    "cifar10", "cifar100", "imdb_reviews", "synthetic_sklearn",
 }
 REQUIRED_COLUMNS = {
     "dataset_key", "dataset", "chapters", "category", "source", "identifier_or_url",
@@ -37,6 +36,9 @@ def main() -> None:
             "license_or_terms", "redistribution_policy",
         ):
             assert row[col].strip(), f"{row['dataset_key']}: blank {col}"
+
+    online = next(r for r in rows if r["dataset_key"] == "online_retail_ii")
+    assert "17" in online["chapters"], "Online Retail II must cover Chapter 17"
 
     print(f"PASS dataset registry: {len(rows)} entries; all required book datasets covered")
 

@@ -18,13 +18,13 @@ python companion/download_datasets.py --standard
 
 Large/raw datasets such as Hydraulic Systems, Online Retail II and Household Power are skipped unless `--include-large` is supplied.
 
-Prepare every downloadable dataset used by the book, including the large UCI datasets and MovieLens:
+Prepare every downloadable dataset used by the book, including the large UCI datasets:
 
 ```bash
-python companion/download_datasets.py --all --include-large --include-movielens
+python companion/download_datasets.py --all --include-large
 ```
 
-MovieLens is deliberately opt-in because its current GroupLens usage terms must be reviewed at the time of download. Raw MovieLens data is not redistributed by this repository.
+Chapter 17 reuses **Online Retail II** as an implicit-feedback recommendation dataset. The same controlled UCI source used in Chapters 3-4 therefore covers Chapters 3-4 and 17; there is no separate Chapter 17 third-party dataset dependency.
 
 List the controlled registry:
 
@@ -44,14 +44,16 @@ The command writes `data/DATASET_MANIFEST.json` containing the files actually pr
 
 The registry covers four acquisition types:
 
-1. **Real-world UCI labs** — standard tabular datasets are materialized through `ucimlrepo`; large/raw time-series datasets are downloaded as official UCI archives so their native files and sampling structure are preserved.
+1. **Real-world UCI labs** — standard tabular datasets are materialized through `ucimlrepo`; large/raw time-series and workbook datasets are downloaded as official UCI archives so their native files and sampling structure are preserved.
 2. **scikit-learn benchmarks** — materialized from `load_*` functions or fetched using `fetch_20newsgroups` / `fetch_california_housing`.
 3. **Framework benchmark archives** — MNIST, CIFAR-10, CIFAR-100 and IMDB are fetched from the upstream URLs used by the ecosystem rather than duplicated in Git.
 4. **Synthetic examples** — `make_classification`, `make_blobs`, and `make_moons` are generated deterministically from the code; there is no dataset file to download.
 
 ## Controlled book datasets
 
-The registry includes all named datasets materially used by the current study edition: Online Retail II, Bike Sharing, Bank Marketing, Condition Monitoring of Hydraulic Systems, Wholesale Customers, SMS Spam Collection, MovieLens latest-small, Individual Household Electric Power Consumption, Adult/Census Income, Iris, Breast Cancer Wisconsin Diagnostic, Digits, California Housing, 20 Newsgroups, MNIST, CIFAR-10, CIFAR-100 and IMDB Movie Reviews, plus the scikit-learn synthetic generators used in examples.
+The registry contains **18 controlled entries** covering all named datasets materially used by the v3.23.8 publication-repair candidate: Online Retail II, Bike Sharing, Bank Marketing, Condition Monitoring of Hydraulic Systems, Wholesale Customers, SMS Spam Collection, Individual Household Electric Power Consumption, Adult/Census Income, Iris, Breast Cancer Wisconsin Diagnostic, Digits, California Housing, 20 Newsgroups, MNIST, CIFAR-10, CIFAR-100 and IMDB Movie Reviews, plus the scikit-learn synthetic generators used in examples.
+
+Online Retail II is mapped to Chapters **3-4 and 17**. Its UCI record is DOI `10.24432/C5CG6D`, and the controlled publication policy records **CC BY 4.0** with attribution.
 
 ## ImageNet note
 
