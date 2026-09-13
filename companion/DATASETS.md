@@ -1,6 +1,6 @@
 # Dataset reproducibility
 
-The repository does **not** commit raw third-party datasets into Git. Instead, it makes every dataset used by the book reproducibly obtainable from its official or library-managed source.
+The repository does **not** commit raw third-party datasets into Git. Instead, it makes every dataset required by the book reproducibly obtainable from its official or library-managed source.
 
 ## One-command setup
 
@@ -18,13 +18,13 @@ python companion/download_datasets.py --standard
 
 Large/raw datasets such as Hydraulic Systems, Online Retail II and Household Power are skipped unless `--include-large` is supplied.
 
-Prepare every downloadable dataset used by the book, including the large UCI datasets and MovieLens:
+Prepare every downloadable dataset in the controlled registry, including the large UCI datasets and the optional legacy MovieLens reference:
 
 ```bash
 python companion/download_datasets.py --all --include-large --include-movielens
 ```
 
-MovieLens is deliberately opt-in because its current GroupLens usage terms must be reviewed at the time of download. Raw MovieLens data is not redistributed by this repository.
+MovieLens is deliberately opt-in because current GroupLens usage terms must be reviewed at the time of download. It is retained only as an optional reference dataset and is **not a v3.23.8 book dependency**. The Chapter 17 assessed recommendation lab uses Online Retail II under UCI CC BY 4.0.
 
 List the controlled registry:
 
@@ -38,20 +38,30 @@ Fetch just one dataset:
 python companion/download_datasets.py --dataset bike_sharing
 ```
 
+For the Chapter 17 recommendation lab:
+
+```bash
+python companion/download_datasets.py --dataset online_retail_ii --include-large
+python companion/chapter17_online_retail_recommender.py
+```
+
 The command writes `data/DATASET_MANIFEST.json` containing the files actually prepared plus SHA-256 hashes. The `data/` directory is gitignored.
 
 ## Coverage model
 
-The registry covers four acquisition types:
+The registry covers five acquisition/use types:
 
-1. **Real-world UCI labs** — standard tabular datasets are materialized through `ucimlrepo`; large/raw time-series datasets are downloaded as official UCI archives so their native files and sampling structure are preserved.
+1. **Real-world UCI labs** — standard tabular datasets are materialized through `ucimlrepo`; large/raw datasets are downloaded as official UCI archives so their native files and sampling structure are preserved.
 2. **scikit-learn benchmarks** — materialized from `load_*` functions or fetched using `fetch_20newsgroups` / `fetch_california_housing`.
 3. **Framework benchmark archives** — MNIST, CIFAR-10, CIFAR-100 and IMDB are fetched from the upstream URLs used by the ecosystem rather than duplicated in Git.
 4. **Synthetic examples** — `make_classification`, `make_blobs`, and `make_moons` are generated deterministically from the code; there is no dataset file to download.
+5. **Optional references** — datasets retained for independent exploration but not required by the controlled book candidate. These remain subject to their own current upstream terms.
 
 ## Controlled book datasets
 
-The registry includes all named datasets materially used by the current study edition: Online Retail II, Bike Sharing, Bank Marketing, Condition Monitoring of Hydraulic Systems, Wholesale Customers, SMS Spam Collection, MovieLens latest-small, Individual Household Electric Power Consumption, Adult/Census Income, Iris, Breast Cancer Wisconsin Diagnostic, Digits, California Housing, 20 Newsgroups, MNIST, CIFAR-10, CIFAR-100 and IMDB Movie Reviews, plus the scikit-learn synthetic generators used in examples.
+The v3.23.8 candidate's materially used named datasets are Online Retail II, Bike Sharing, Bank Marketing, Condition Monitoring of Hydraulic Systems, Wholesale Customers, SMS Spam Collection, Individual Household Electric Power Consumption, Adult/Census Income, Iris, Breast Cancer Wisconsin Diagnostic, Digits, California Housing, 20 Newsgroups, MNIST, CIFAR-10, CIFAR-100 and IMDB Movie Reviews, plus the scikit-learn synthetic generators used in examples.
+
+Online Retail II serves Chapters 3-4 and the Chapter 17 implicit-feedback recommendation lab. MovieLens latest-small remains in the registry only as an optional non-book reference.
 
 ## ImageNet note
 
