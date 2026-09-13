@@ -1,22 +1,22 @@
 # Dataset & Companion Reproducibility Status
 
 **Book:** AI Engineering: From Foundations to Production Systems  
-**Controlled interior:** v2.4  
-**Status:** PASS — repository-level reproducibility architecture
+**Frozen authority:** v3.22  
+**Candidate alignment:** v3.23.8 production-repair review candidate  
+**Status:** REVALIDATION REQUIRED ON THIS BRANCH
 
 ## Dataset coverage
 
-`companion/dataset_registry.csv` contains **19 controlled entries** covering every named dataset materially used by the current study edition, plus the synthetic scikit-learn generators used by multiple examples.
+`companion/dataset_registry.csv` contains controlled entries for every dataset materially used by the v3.23.8 candidate plus the optional MovieLens reference.
 
-The registry covers:
+The required book datasets include:
 
-- Online Retail II
+- Online Retail II — Chapters 3-4 and 17
 - Bike Sharing
 - Bank Marketing
 - Condition Monitoring of Hydraulic Systems
 - Wholesale Customers
 - SMS Spam Collection
-- MovieLens latest-small
 - Individual Household Electric Power Consumption
 - Adult / Census Income
 - Iris
@@ -29,6 +29,8 @@ The registry covers:
 - CIFAR-100
 - IMDB Movie Reviews
 - scikit-learn synthetic generators
+
+MovieLens latest-small is retained only as an **optional reference** and is not a v3.23.8 book dependency. The Chapter 17 assessed recommendation lab now uses Online Retail II under UCI CC BY 4.0.
 
 ImageNet is discussed and ImageNet-pretrained weights are used in transfer-learning examples, but raw ImageNet is not a reader dataset dependency and is therefore not redistributed or downloaded by the dataset preparation command.
 
@@ -55,34 +57,25 @@ python -m pip install -r companion/requirements-data.txt
 python companion/download_datasets.py --standard
 ```
 
-Full setup, including large UCI archives and opt-in MovieLens:
+Chapter 17 Online Retail II recommendation lab:
 
 ```bash
-python companion/download_datasets.py --all --include-large --include-movielens
+python companion/download_datasets.py --dataset online_retail_ii --include-large
+python companion/chapter17_online_retail_recommender.py
 ```
 
-## Automated QA evidence
+Optional MovieLens exploration remains explicitly opt-in:
 
-GitHub Actions run **34107524876** on commit **912a85a0ca07877f0151d9ab6a7965937197414d** completed successfully.
+```bash
+python companion/download_datasets.py --dataset movielens_latest_small --include-movielens
+```
 
-The run passed all of the following gates:
+## Revalidation gate
 
-1. compile all companion Python source;
-2. verify the controlled registry contains every required dataset;
-3. enumerate the dataset CLI successfully;
-4. install data/reference dependencies;
-5. materialize Iris, Breast Cancer and Digits locally and verify their SHA-256 manifest records;
-6. run the offline Chapter 27 retrieval baseline;
-7. run the Chapter 28 bounded-agent authorization reference;
-8. run all **12 deterministic book-output regression groups**;
-9. run the offline reference-output smoke suite.
+The previous frozen-v3.22 CI evidence remains historical evidence only. Because this branch changes the Chapter 17 dataset mapping and adds a new companion script, promotion requires a fresh exact-head GitHub Actions run covering compilation, dataset-registry verification, dataset CLI enumeration, existing deterministic checks, RAG/agent smoke checks, and reference-output assertions.
 
-## External-source caveat
-
-A green repository CI run does not imply that every large/network-dependent third-party dataset was freshly downloaded during that run. External-source availability can change independently of the repository. The acquisition code and registry are source-controlled, while upstream providers and their current license/usage terms remain authoritative.
-
-MovieLens remains explicitly opt-in. Large UCI datasets are downloaded from official UCI archives so their native file structure is preserved. Network/service-sensitive examples must not be described as locally verified unless that exact external execution path was actually run.
+A green repository CI run will not imply that every large/network-dependent third-party dataset was freshly downloaded. External-source availability can change independently of the repository. The acquisition code and registry are source-controlled, while upstream providers and their current license/usage terms remain authoritative.
 
 ## Verdict
 
-**All datasets required by the book are now reproducibly available through the repository architecture.** Raw third-party data is intentionally not committed; it is obtained from controlled upstream sources according to the registry and redistribution policy.
+**Architecture is aligned for v3.23.8, but this branch is not publication-green until fresh CI passes.**
