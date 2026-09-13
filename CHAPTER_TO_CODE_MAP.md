@@ -2,7 +2,8 @@
 
 **Book:** *AI Engineering: From Foundations to Production Systems*  
 **Edition:** Code-Verified Illustrated Study Edition · 2026  
-**Controlled manuscript/interior:** v3.22  
+**Frozen authority:** v3.22  
+**Candidate alignment on this branch:** v3.23.8 production-repair review candidate
 
 This map helps readers locate the substantial runnable labs, dataset controls, reproducibility checks, and production scaffolds that accompany the book.
 
@@ -39,7 +40,7 @@ For the current freeze/support policy, see [BOOK_VERSION.md](BOOK_VERSION.md). F
 | 14 | RNNs and LSTMs | shared reference checks | **Version-sensitive.** Sequence-model walkthroughs remain in the book. |
 | 15 | NLP fundamentals | [chapter15_sms_spam.py](companion/chapter15_sms_spam.py); [dataset_registry.csv](companion/dataset_registry.csv) | **Data-dependent.** Major SMS Spam lab; IMDB benchmark acquisition is also registered. |
 | 16 | Conversational AI | shared reference checks | **Version-sensitive.** Dialogue/tool examples remain in the book; no unrestricted-agent implementation is implied. |
-| 17 | Recommendation systems | [chapter17_movielens_recommender.py](companion/chapter17_movielens_recommender.py); [dataset_registry.csv](companion/dataset_registry.csv) | **Data-dependent.** Major MovieLens lab; raw MovieLens data is not redistributed. |
+| 17 | Recommendation systems | [chapter17_online_retail_recommender.py](companion/chapter17_online_retail_recommender.py); [dataset_registry.csv](companion/dataset_registry.csv) | **Data-dependent.** Major Online Retail II implicit-feedback recommendation lab. The dataset is controlled under UCI CC BY 4.0. |
 | 18 | Reinforcement learning and learning agents | shared reference checks | **Version-sensitive / in-book.** No dedicated standalone Chapter 18 script is currently promised. |
 | 19 | Transformers and modern NLP | shared reference checks | **Version-sensitive.** Transformer/fine-tuning examples should not be read as a frozen hosted-service execution path. |
 | 20 | Computer vision fundamentals | shared reference checks | **Version-sensitive / in-book.** No dedicated standalone Chapter 20 script is currently promised. |
@@ -65,7 +66,7 @@ For the current freeze/support policy, see [BOOK_VERSION.md](BOOK_VERSION.md). F
 | 8 | Benchmark regression helper | [chapter08_california_regression.py](companion/chapter08_california_regression.py) | California Housing |
 | 9 | Customer clustering | [chapter09_wholesale_clustering.py](companion/chapter09_wholesale_clustering.py) | Wholesale Customers |
 | 15 | SMS text classification | [chapter15_sms_spam.py](companion/chapter15_sms_spam.py) | SMS Spam Collection |
-| 17 | Recommendation | [chapter17_movielens_recommender.py](companion/chapter17_movielens_recommender.py) | MovieLens latest-small |
+| 17 | Recommendation | [chapter17_online_retail_recommender.py](companion/chapter17_online_retail_recommender.py) | Online Retail II |
 | 22 | Time-series baseline | [chapter22_power_timeseries_baseline.py](companion/chapter22_power_timeseries_baseline.py) | Household Electric Power Consumption |
 | 26 | Fairness audit | [chapter26_adult_fairness.py](companion/chapter26_adult_fairness.py) | Adult / Census Income |
 | 27 | RAG baseline | [chapter27_rag_baseline.py](companion/chapter27_rag_baseline.py) | Controlled/local corpus inputs |
@@ -76,7 +77,7 @@ For the current freeze/support policy, see [BOOK_VERSION.md](BOOK_VERSION.md). F
 
 ### Dataset acquisition and provenance
 
-- [dataset_registry.csv](companion/dataset_registry.csv) — canonical registry of materially used named datasets, chapter coverage, source/identifier, acquisition route, terms, redistribution rule, and size flag.
+- [dataset_registry.csv](companion/dataset_registry.csv) — canonical registry of materially used named datasets, chapter coverage, source/identifier, acquisition route, terms, redistribution rule, and size flag. MovieLens is retained only as an optional reference entry and is not a v3.23.8 book dependency.
 - [DATASETS.md](companion/DATASETS.md) — setup and redistribution guidance.
 - [download_datasets.py](companion/download_datasets.py) — controlled materialization of permitted datasets.
 - [verify_dataset_registry.py](companion/verify_dataset_registry.py) — CI protection against loss of required dataset coverage.
